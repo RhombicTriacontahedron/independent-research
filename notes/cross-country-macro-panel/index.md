@@ -6,8 +6,8 @@ Carlos Galindo
 > ### At a glance
 >
 > - **Question.** What do global shocks, macroeconomic uncertainty and financial-sector fragility do to small open economies, and can one harmonised data panel answer it routinely?
-> - **Approach.** An automated monthly and quarterly panel for five economies, built from international official sources under strict frequency and aggregation rules, plus early-warning indicators for 63 jurisdictions.
-> - **Finding.** One harmonised panel now serves monthly and quarterly analysis of five economies, with debt-service and credit-gap early-warning indicators for 63 jurisdictions. Its first use, a dynamic panel of industrial output, found global market volatility the one channel that survives every specification and no robust direct effect of domestic policy rates.
+> - **Approach.** An automated monthly and quarterly panel for five economies, built from international official sources under strict frequency and aggregation rules, plus an early-warning screen built on the BIS’s published credit-gap and debt-service series.
+> - **Finding.** One harmonised panel now serves monthly and quarterly analysis of five economies. Its first use, a dynamic panel of industrial output, found global market volatility the one channel that survives every specification and no robust direct effect of domestic policy rates. The early-warning screen finds no jurisdiction with a credit gap in the danger zone at the start of 2026, against 23 of 43 at the 2009 peak.
 > - **Why it matters.** The panel turns a one-off analysis into a routine diagnostic that can be refreshed as new data arrive.
 
 ## The question
@@ -28,7 +28,7 @@ This project builds the panel so that those problems are handled by design, and 
 - When series are aggregated up to quarters, the rule follows the economic type: flows are summed, stocks are averaged or taken at period end, and rates are averaged.
 - Seasonally adjusted and unadjusted series are not mixed, units and transformations are audited, and every series carries its source and revision history so a later refresh can be compared with an earlier one.
 
-**Diagnostics framework.** The panel is organised around three blocks: global shocks, macroeconomic uncertainty, and financial-sector vulnerability. For the last, a wider early-warning dataset of debt-service ratios and credit-to-GDP gaps covers 63 jurisdictions, with histories reaching back to the 1920s for some. The five-economy panel inherits the same indicators.
+**Diagnostics framework.** The panel is organised around three blocks: global shocks, macroeconomic uncertainty, and financial-sector vulnerability. For the last, the screen uses the two early-warning series the BIS publishes for the private non-financial sector: the credit-to-GDP gap, available for 43 jurisdictions, and the debt-service ratio, available for 32 of them. Four of the five panel economies have both; Israel has the credit gap only. The screen reads both series directly from the BIS, with the download date recorded, because an earlier extraction had stored the credit-to-GDP ratio under the gap’s label.
 
 **Estimation.** Industrial output growth is modelled as a dynamic panel: its own lag, the policy rate, inflation, the change in the sovereign spread, oil prices, and a market volatility index. Estimators include pooled and fixed-effects least squares, fixed effects with standard errors clustered by time (so that contemporaneous cross-country correlation is respected), and two instrumental-variable estimators in first differences. The panel is balanced with five countries and about 326 months, from January 1999 to February 2026, so fixed-effects bias from the lagged dependent variable is small.
 
@@ -80,13 +80,13 @@ Table 1: Dynamic-panel estimates for industrial output growth (year on year, pe
 
 </div>
 
-**Financial vulnerability.** The wider early-warning dataset records debt-service ratios and credit-to-GDP gaps for 63 jurisdictions. The figure below shows the kind of screen the framework supports: jurisdictions with a high debt-service burden and a positive credit gap are flagged for closer attention.
+**Financial vulnerability.** The screen places each jurisdiction’s credit-to-GDP gap against how far its debt-service ratio sits above or below its own average over its published history, which starts in 1999 at the earliest. The BIS’s quarterly early-warning tables mark a gap above 10 percentage points as the danger zone, and its 2018 evaluation puts the standalone critical value near 9. In the first quarter of 2026 none of the 32 jurisdictions with both series is near either value: the largest gap is Japan’s, at +5.7 points, and the median is −12.7. Debt-service burdens sit well above their own averages in Türkiye, Hong Kong, Brazil and Russia, by 9.5 to 12.1 points, but none of the four has a credit gap above +0.7. Over time, the count of jurisdictions above the 10-point line peaked at 23 of 43 in the third quarter of 2009, and it has been zero since the second quarter of 2024.
 
 <div id="fig-ewi">
 
 ![](index_files/figure-commonmark/fig-ewi-output-1.png)
 
-Figure 3: Early-warning screen for 63 jurisdictions: credit gap against debt-service ratio, flagged where both are elevated (simulated data).
+Figure 3: Early-warning screen, private non-financial sector. Left: credit-to-GDP gap against the debt-service ratio’s deviation from its own average over its history (from 1999 at the earliest), 32 jurisdictions, first quarter of 2026; the vertical line marks a 10-point gap. Right: number of jurisdictions with a gap above 10 points, out of the 33 to 43 reporting each quarter, 1995 to 2026. Source: BIS credit-to-GDP gap and debt-service ratio statistics, downloaded 8 October 2026; the author’s calculations.
 
 </div>
 
@@ -100,10 +100,10 @@ Figure 3: Early-warning screen for 63 jurisdictions: credit gap against debt-se
 
 ## Limits and next steps
 
-The panel has only five economies, so the results describe a small group, not emerging markets in general. Estimates are contemporaneous and linear; they do not capture thresholds or longer credit lags, and the volatility effect may partly reflect common global demand. The activity model uses one output measure and should be extended to labour-market and external-account outcomes. The downstream step, turning the diagnostics into regular written macro briefs, has been designed but not built. The early-warning screen needs a validated threshold and an out-of-sample test before any ranking is used.
+The panel has only five economies, so the results describe a small group, not emerging markets in general. Estimates are contemporaneous and linear; they do not capture thresholds or longer credit lags, and the volatility effect may partly reflect common global demand. The activity model uses one output measure and should be extended to labour-market and external-account outcomes. The downstream step, turning the diagnostics into regular written macro briefs, has been designed but not built. The early-warning screen applies a published threshold to the credit gap only; it sets none for the debt-service ratio and has not been tested out of sample, so it describes where jurisdictions stand rather than predicting crises.
 
 ## About the evidence
 
-The panel and the dynamic-panel estimates are the project’s own work during a career break, from late 2025 to early 2026, built with AI assistance under my direction as systems architect. The text and the table report real results from that work; the table was re-fitted from the stored panel, which reproduces the reported estimates exactly. The figures here are simulated to share its structure (five units, monthly frequency, 63 jurisdictions) and are not the project’s estimates.
+The panel and the dynamic-panel estimates are the project’s own work during a career break, from late 2025 to early 2026, built with AI assistance under my direction as systems architect. The text and the table report real results from that work; the table was re-fitted from the stored panel, which reproduces the reported estimates exactly. The first two figures are simulated to share its structure (five units, monthly frequency) and are not the project’s estimates. The early-warning figure is real: new work from October 2026 on the BIS’s public series, with the screen’s rules fixed before it was first run; the count over time was added afterwards as a description.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
