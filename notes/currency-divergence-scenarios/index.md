@@ -75,7 +75,7 @@ Two economies with the same total premium can have very different parts, and the
 2.  **Political terms count twice, on purpose.** Friction raises both the structural and the tactical premium. That is realistic, since a standoff both worsens the long-run outlook and makes fast money leave, but it means results are sensitive to one parameter and should be shown with sensitivity ranges.
 3.  **Dependence matters more than any single driver.** Global risk appetite, fiscal shocks and political friction arrive together, so independent draws understate the tail. Heavy-tailed joint draws are the cheaper fix.
 4.  **Scenarios beat point forecasts for decisions.** A set of weighted paths, each with a named trigger, is something a user can monitor; a single number is not.
-5.  **Calibration should be visible.** Illustrative weights are acceptable if they are exposed and labelled. The earlier version of the worked case overwrote the computed tactical premium with a sourced figure; removing that override kept the results driven by the inputs rather than by the answer expected.
+5.  **Calibration should be visible.** Illustrative weights are acceptable if they are exposed and labelled. The computed tactical premium is never overwritten with a sourced figure, so the results stay driven by the inputs rather than by the answer expected.
 
 ## Scope and next steps
 
