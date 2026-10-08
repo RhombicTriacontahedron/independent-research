@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#what-the-work-shows" id="toc-what-the-work-shows" class="nav-link" data-scroll-target="#what-the-work-shows">What the work shows</a></li>
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#limits-and-next-steps" id="toc-limits-and-next-steps" class="nav-link" data-scroll-target="#limits-and-next-steps">Limits and next steps</a></li>
+  <li><a href="#scope-and-next-steps" id="toc-scope-and-next-steps" class="nav-link" data-scroll-target="#scope-and-next-steps">Scope and next steps</a></li>
   <li><a href="#about-the-evidence" id="toc-about-the-evidence" class="nav-link" data-scroll-target="#about-the-evidence">About the evidence</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
@@ -260,15 +260,15 @@ Figure&nbsp;3: Left: shocks predicted by the learned module against realised sho
 <li><strong>Alignment bugs are silent.</strong> Misaligned calendar periods produce empty quarterly columns, not errors. A minimal reality check on the output, not only on the code, found it.</li>
 </ol>
 </section>
-<section id="limits-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="limits-and-next-steps">Limits and next steps</h2>
-<p>The honest status is a working prototype. It has not been evaluated out of sample on real data, so it makes no claim about forecast accuracy or about whether the shock module adds value in practice. The module was trained and exercised on simulated data only. The model is linear in its core and has a single latent-factor flavour, with no treatment of data revisions or of publication-date calendars.</p>
+<section id="scope-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
+<p>The current status is a working prototype. It has not been evaluated out of sample on real data, so it makes no claim about forecast accuracy or about whether the shock module adds value in practice. The module was trained and exercised on simulated data only. The model is linear in its core and has a single latent-factor flavour, with no treatment of data revisions or of publication-date calendars.</p>
 <p>Three steps would turn it into evidence. First, assemble a real-time vintage dataset for one economy and run a pseudo-real-time test by information vintage against a simple benchmark. Second, train the shock module on genuine event features and report its cross-validated error, then test whether it improves the nowcast. Third, add a revision model so that early releases are treated as noisy measurements of later ones.</p>
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
 <p>The work is an independent prototype built during a career break, in 2025, and it was documented through design notes, a staged plan with acceptance tests, and generated reports. It was run on simulated mixed-frequency data of a few monthly states, daily series aggregated to months, and quarterly figures. It has no real-data results. All figures on this page are simulated.</p>
-<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
+<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 
 </section>
@@ -684,7 +684,7 @@ Figure&nbsp;3: Left: shocks predicted by the learned module against realised sho
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Figures marked <em>simulated</em> illustrate the analysis; they are not its results.</p>
+<p>Figures marked <em>simulated</em> show the shape of each analysis; results are stated in the text.</p>
 </div>
   </div>
 </footer>

@@ -90,9 +90,9 @@ Figure 3: Underlying trend minus latest headline rate across 22 economies, rank
 - **Consistency is the product.** Applying one method to 22 economies makes the results comparable and keeps the maintenance cost bounded.
 - **Review finds the edges.** A methods review of the finished system was worth doing precisely because it separated what the system establishes from what it only suggests.
 
-## Limits and next steps
+## Scope and next steps
 
-The honest limits are specific. In the default configuration the second-stage fit uses data through the period covered by the external forecast, so any accuracy measured that way is flattered. A clean out-of-sample test needs that information switched off, which also changes the oil assumption. The fan charts are built from quantile paths that are iterated forward, smoothed and widened by judgement, and tails are trimmed at the 20th and 80th percentiles, so they are not calibrated quantiles. The evaluation covers point forecasts against the benchmark only: there is no coverage, probability-integral or density-score test. Runs also include unseeded random jitter, so results are not exactly repeatable.
+The scope is specific. In the default configuration the second-stage fit uses data through the period covered by the external forecast, so any accuracy measured that way is flattered. A clean out-of-sample test needs that information switched off, which also changes the oil assumption. The fan charts are built from quantile paths that are iterated forward, smoothed and widened by judgement, and tails are trimmed at the 20th and 80th percentiles, so they are not calibrated quantiles. The evaluation covers point forecasts against the benchmark only: there is no coverage, probability-integral or density-score test. Runs also include unseeded random jitter, so results are not exactly repeatable.
 
 Next steps follow directly. First, an out-of-sample comparison against the benchmark with the benchmark’s period excluded from the fit. Second, calibration tests for the fans, and a seeded run so results can be reproduced. Third, a decision on whether the exchange-rate and oil scenario grid should be restored for all economies.
 
@@ -102,4 +102,4 @@ I therefore do not claim that the projections beat the benchmark. The claim is t
 
 The work was done between May 2024 and January 2025, building on a system begun in a previous role. It covers monthly headline and core inflation for 22 economies. The system’s design was reviewed from its own documentation and outputs; the benchmark forecast is external and is not reproduced here. All figures on this page are simulated.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

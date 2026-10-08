@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#what-the-work-shows" id="toc-what-the-work-shows" class="nav-link" data-scroll-target="#what-the-work-shows">What the work shows</a></li>
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#limits-and-next-steps" id="toc-limits-and-next-steps" class="nav-link" data-scroll-target="#limits-and-next-steps">Limits and next steps</a></li>
+  <li><a href="#scope-and-next-steps" id="toc-scope-and-next-steps" class="nav-link" data-scroll-target="#scope-and-next-steps">Scope and next steps</a></li>
   <li><a href="#about-the-evidence" id="toc-about-the-evidence" class="nav-link" data-scroll-target="#about-the-evidence">About the evidence</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
@@ -264,18 +264,18 @@ Figure&nbsp;4: Long-run growth of a simulated quarterly series with crisis outli
 <li><strong>Decompose before you correlate.</strong> A pair can share a calendar and a trend without sharing any short-run dynamics. Splitting the series first changes the answer to “how related are they?”.</li>
 <li><strong>Summary statistics average over frequency.</strong> The ordinary correlation is a weighted average of coherence across frequencies. A relationship that lives at one cycle length is diluted, and a high value at the lowest frequency is not evidence of causal pass-through.</li>
 <li><strong>Report the transformation.</strong> Log differences and plain differences gave correlations up to about 0.05 apart. The effect is small, but it is systematic and should be disclosed.</li>
-<li><strong>Check the estimator before trusting the peak.</strong> Coherence peaks depend on segment length and overlap. Reporting the share of settings that remain significant is more honest than quoting the largest value.</li>
+<li><strong>Check the estimator before trusting the peak.</strong> Coherence peaks depend on segment length and overlap. Reporting the share of settings that remain significant is more informative than quoting the largest value.</li>
 <li><strong>Robust growth rates are cheap insurance.</strong> One or two crisis quarters can shift an average growth rate by more than its sampling error, and a robust estimate with a recursive band shows how much a number can be trusted.</li>
 </ol>
 </section>
-<section id="limits-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="limits-and-next-steps">Limits and next steps</h2>
+<section id="scope-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
 <p>The application covers five pairs of US price series, and a refutation of one claim for those series is not a general statement about price pass-through. Coherence is not causation: common drivers could produce coupling in the business-cycle band. The size and variance share of the frequency-selective link has not been quantified, and the claim that it has forecasting value has not been tested. The natural next step is a forecasting experiment in which a band-limited component of producer prices is used to predict consumer service inflation out of sample, compared with a naive benchmark. The cross-country long-run growth estimates also need to be re-run and tabulated before they are shown.</p>
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
 <p>The application uses public monthly price series for the United States from late 2009, about 196 observations per series, and the decomposition work was applied to US and Mexican price and activity series. The first three figures are drawn from those public series and the stored decompositions; the long-run growth figure uses simulated data. The numbers in the text are the project’s own results from the real series. The work was done from 2025 to 2026, as part of a rebuild of an applied research toolkit.</p>
-<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
+<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 
 </section>
@@ -691,7 +691,7 @@ Figure&nbsp;4: Long-run growth of a simulated quarterly series with crisis outli
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Figures marked <em>simulated</em> illustrate the analysis; they are not its results.</p>
+<p>Figures marked <em>simulated</em> show the shape of each analysis; results are stated in the text.</p>
 </div>
   </div>
 </footer>

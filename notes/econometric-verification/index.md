@@ -66,11 +66,11 @@ Figure 3: Share of series with a non-airline model, by automation level (simula
 
 1.  **Matching your own earlier output is not correctness.** Reproducing a stored result shows a refactor preserved behaviour. Correctness needs a second source: known-value fixtures, and a live recomputation.
 2.  **Stand-in checks cannot find interface faults.** The live runs revealed faults in how results were retrieved that the stand-in tests were structurally unable to see. Where a tool talks to real software, a real run belongs in the test plan.
-3.  **Precision beats coverage in automatic checks.** A short rule list with a zero-false-alarm guarantee is used; a broad one is switched off. The honest outcome of the design review was to cut the proposed rule additions that could not meet that bar.
+3.  **Precision beats coverage in automatic checks.** A short rule list with a zero-false-alarm guarantee is used; a broad one is switched off. The design review therefore kept only the rule additions that meet that bar.
 4.  **Verification finds the author’s own mistakes.** The sharpest finding was an overstatement in a draft paper, caught because the numbers had been regenerated rather than recalled.
 5.  **Cite the source of every answer.** Returning the reference alongside each lookup turns “the machine said so” into something a reader can check.
 
-## Limits and next steps
+## Scope and next steps
 
 The checks cover a small set of documented traps. It cannot judge whether a model is appropriate, and some real errors, such as claiming model identification at a setting that does not perform it, depend on intent and cannot be found by reading code. The reference index covers the commands extracted so far, not the full language. Some components have so far been validated only on crafted cases, and everything has been run in a single computing environment, so portability is unproven.
 
@@ -80,4 +80,4 @@ Next steps are a wider set of crafted raw outputs, validation of the second conn
 
 The work was done in 2025–2026 during a career break and draws on a documented reference index, an archived set of model runs, and the validation record of the tools. The figures on this page are simulated to show structure only; counts and findings in the text come from the project’s own records.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

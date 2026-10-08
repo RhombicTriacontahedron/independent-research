@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Carlos Galindo">
-<meta name="description" content="Rebuilding a multi-country monitor of underlying inflation and the headline and core projection system behind it, with honest limits on what was tested.">
+<meta name="description" content="Rebuilding a multi-country monitor of underlying inflation and the headline and core projection system behind it, with a clear statement of what was tested.">
 
 <title>A global underlying-inflation monitor with a blended projection system – Independent research, 2024–2026</title>
 <style>
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#what-the-work-shows" id="toc-what-the-work-shows" class="nav-link" data-scroll-target="#what-the-work-shows">What the work shows</a></li>
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#limits-and-next-steps" id="toc-limits-and-next-steps" class="nav-link" data-scroll-target="#limits-and-next-steps">Limits and next steps</a></li>
+  <li><a href="#scope-and-next-steps" id="toc-scope-and-next-steps" class="nav-link" data-scroll-target="#scope-and-next-steps">Scope and next steps</a></li>
   <li><a href="#about-the-evidence" id="toc-about-the-evidence" class="nav-link" data-scroll-target="#about-the-evidence">About the evidence</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Rebuilding a multi-country monitor of underlying inflation and the headline and core projection system behind it, with honest limits on what was tested.
+    Rebuilding a multi-country monitor of underlying inflation and the headline and core projection system behind it, with a clear statement of what was tested.
   </div>
 </div>
 
@@ -277,16 +277,16 @@ Figure&nbsp;3: Underlying trend minus latest headline rate across 22 economies, 
 <li><strong>Review finds the edges.</strong> A methods review of the finished system was worth doing precisely because it separated what the system establishes from what it only suggests.</li>
 </ul>
 </section>
-<section id="limits-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="limits-and-next-steps">Limits and next steps</h2>
-<p>The honest limits are specific. In the default configuration the second-stage fit uses data through the period covered by the external forecast, so any accuracy measured that way is flattered. A clean out-of-sample test needs that information switched off, which also changes the oil assumption. The fan charts are built from quantile paths that are iterated forward, smoothed and widened by judgement, and tails are trimmed at the 20th and 80th percentiles, so they are not calibrated quantiles. The evaluation covers point forecasts against the benchmark only: there is no coverage, probability-integral or density-score test. Runs also include unseeded random jitter, so results are not exactly repeatable.</p>
+<section id="scope-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
+<p>The scope is specific. In the default configuration the second-stage fit uses data through the period covered by the external forecast, so any accuracy measured that way is flattered. A clean out-of-sample test needs that information switched off, which also changes the oil assumption. The fan charts are built from quantile paths that are iterated forward, smoothed and widened by judgement, and tails are trimmed at the 20th and 80th percentiles, so they are not calibrated quantiles. The evaluation covers point forecasts against the benchmark only: there is no coverage, probability-integral or density-score test. Runs also include unseeded random jitter, so results are not exactly repeatable.</p>
 <p>Next steps follow directly. First, an out-of-sample comparison against the benchmark with the benchmark’s period excluded from the fit. Second, calibration tests for the fans, and a seeded run so results can be reproduced. Third, a decision on whether the exchange-rate and oil scenario grid should be restored for all economies.</p>
 <p>I therefore do not claim that the projections beat the benchmark. The claim is that the monitor and projection system were rebuilt and extended, and that its design and limits are now documented.</p>
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
 <p>The work was done between May 2024 and January 2025, building on a system begun in a previous role. It covers monthly headline and core inflation for 22 economies. The system’s design was reviewed from its own documentation and outputs; the benchmark forecast is external and is not reproduced here. All figures on this page are simulated.</p>
-<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
+<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 
 </section>
@@ -702,7 +702,7 @@ Figure&nbsp;3: Underlying trend minus latest headline rate across 22 economies, 
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Figures marked <em>simulated</em> illustrate the analysis; they are not its results.</p>
+<p>Figures marked <em>simulated</em> show the shape of each analysis; results are stated in the text.</p>
 </div>
   </div>
 </footer>

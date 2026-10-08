@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#what-the-work-shows" id="toc-what-the-work-shows" class="nav-link" data-scroll-target="#what-the-work-shows">What the work shows</a></li>
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#limits-and-next-steps" id="toc-limits-and-next-steps" class="nav-link" data-scroll-target="#limits-and-next-steps">Limits and next steps</a></li>
+  <li><a href="#scope-and-next-steps" id="toc-scope-and-next-steps" class="nav-link" data-scroll-target="#scope-and-next-steps">Scope and next steps</a></li>
   <li><a href="#about-the-evidence" id="toc-about-the-evidence" class="nav-link" data-scroll-target="#about-the-evidence">About the evidence</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Demographics and growth in emerging markets</h1>
-<p class="subtitle lead">What eighteen economies’ long-run projections do, and do not, say about the demographic dividend</p>
+<p class="subtitle lead">How demographics and social conditions line up with projected long-run growth across eighteen emerging economies</p>
   <div class="quarto-categories">
     <div class="quarto-category">Global macro and emerging markets</div>
   </div>
@@ -177,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Question.</strong> How far do a country’s demographic trajectory and its social conditions together explain how fast an emerging economy can grow over the next two decades?</li>
 <li><strong>Approach.</strong> Pair published population projections with public social indicators for 18 economies, reduce each block to a single factor, and compare both factors with projected potential growth.</li>
 <li><strong>Finding.</strong> Re-estimated on one frozen dataset, working-age growth (+0.25) and inequality (−0.22) point the expected way but cannot be told apart from zero in 18 economies. Only urbanisation has a link whose 95% interval excludes zero, and it is negative, a level effect. A demographic and a social factor each line up with growth, in opposite directions, and cancel in an equal-weight composite.</li>
-<li><strong>Why it matters.</strong> It tests the “demographic dividend” story against the projections themselves, and shows how two early correlations that looked strong did not survive a frozen re-run.</li>
+<li><strong>Why it matters.</strong> It tests the “demographic dividend” story against the projections themselves, and checks each early correlation against a frozen re-run, so that only relationships that hold carry the conclusions.</li>
 </ul>
 </div>
 </div>
@@ -260,8 +260,8 @@ Figure&nbsp;3: Stylised dependency-ratio paths, 2024-2044, for a young, a maturi
 <li><strong>Disagreement among scenarios is information.</strong> Long-run growth scenarios from different institutions can differ by several percentage points for the same country, so a single projection should not be treated as a fact.</li>
 </ol>
 </section>
-<section id="limits-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="limits-and-next-steps">Limits and next steps</h2>
+<section id="scope-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
 <p>The comparison is cross-sectional, with 18 observations, and the growth variable is itself a projection rather than an outcome. It therefore shows how forecasts line up with fundamentals, not what fundamentals cause. The projections already embed demographic assumptions, so some of the demography-growth link is built in.</p>
 <p>The demographic factor, as constructed, was dominated by population size rather than by the speed or shape of change, which is not the dimension that the dividend argument cares about. A better version would build the factor from growth and timing variables only. Early summaries reported different correlations for the same relationships. Re-estimated on the frozen final table, two of the five headline values moved by more than 0.3 and one turned out to be built in by construction. That is why every value quoted here comes from that one table. Next steps are to add dependency-ratio timing as an explicit regressor, to include a measure of productivity growth, and to test whether the inequality effect survives once the sample is widened beyond 18 economies.</p>
 <p>The investment-style tiering that accompanied the early drafts was a presentation device, not a result, and is not offered here as advice.</p>
@@ -269,7 +269,7 @@ Figure&nbsp;3: Stylised dependency-ratio paths, 2024-2044, for a young, a maturi
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
 <p>The note and presentation were produced in spring 2025, using published population projections, published long-run growth scenarios and public development indicators for 18 emerging economies. Correlations, intervals and explained variance in the text were re-estimated in October 2026 on the project’s frozen final table of 18 economies, with 95% intervals from the Fisher transformation. The spring 2025 values are quoted only where they differ. The correlation chart shows these derived statistics, not the underlying third-party projections. The quadrant chart and the dependency-ratio paths are simulated to share the structure of the analysis and are not the project’s results.</p>
-<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
+<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 
 </section>
@@ -685,7 +685,7 @@ Figure&nbsp;3: Stylised dependency-ratio paths, 2024-2044, for a young, a maturi
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Figures marked <em>simulated</em> illustrate the analysis; they are not its results.</p>
+<p>Figures marked <em>simulated</em> show the shape of each analysis; results are stated in the text.</p>
 </div>
   </div>
 </footer>

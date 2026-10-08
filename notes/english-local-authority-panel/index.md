@@ -87,7 +87,7 @@ Figure 3: The shape of an event-study on benefit intensity (simulated data). Di
 4.  **Treat the treatment variable as a finding.** Policy rates and the rate landlords actually pay diverged for years. Choosing the wrong one would have overstated the shock.
 5.  **Read two results together.** Rate pass-through through landlords’ financing costs looks small, while the frozen benefit floor appears to bind. Together they suggest the pressure sat on the tenant side of the market, and that monetary and fiscal policy were pulling in different directions.
 
-## Limits and next steps
+## Scope and next steps
 
 An area panel cannot see what happens inside an area. A cost shock that passes through hardest where tenant demand is least elastic, or a landlord with a portfolio across authorities, is below its resolution. The null is silent on those mechanisms rather than exculpatory, and a household- or landlord-level incidence design is the right next test.
 
@@ -97,4 +97,4 @@ The window is also short and mid-transmission. The effective mortgage rate had o
 
 The panel and both studies are real: 290 authorities, 21 quarters, official statistics, built between 2024 and 2026 during a period of independent research. The figures here are simulated from the same structure (authorities, quarters, exposures, event timing) and illustrate the design only. The estimates in the text are the project’s own results.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

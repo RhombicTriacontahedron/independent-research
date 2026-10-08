@@ -78,7 +78,7 @@ Figure 3: How a deflator error moves the measured productivity ratio, for a tru
 4.  **Resource-rich countries break the standard capital share.** A common share of one third is a convenient assumption, but a measured share of about 0.6 against 0.38 is large enough to move the answer.
 5.  **The corrected story is, if anything, harsher.** If Mexico was never ahead, the post-1981 decline in the published series is mostly an artefact too, and the real finding is persistence: relative productivity stayed near 60 to 65 per cent of the US level for decades, in spite of heavy capital accumulation and rising schooling. The problem is one of never converging, not of losing a lead.
 
-## Limits and next steps
+## Scope and next steps
 
 The attribution of roughly 70 per cent to measurement is the investigation’s own judgement, built from sector ratios, plausibility arguments and the capital-share and oil tests. It is not an estimated decomposition and carries no confidence interval. The corrected productivity level of about 65 per cent of the US also rests on the same reasoning. Two things would strengthen it: a formal decomposition that nests the deflator channel as a parameter, and a sector-by-sector re-pricing using detailed international price survey data in place of aggregate factors. The sectoral database covers a limited set of countries and sectors, and the first decomposition runs had to be redone after a prices error, so the final numbers depend on the checks described above.
 
@@ -86,4 +86,4 @@ The attribution of roughly 70 per cent to measurement is the investigation’s o
 
 This note covers a 2025 investigation of published international productivity data for Mexico and the US around 1980. The numbers in the text are results of that work. The figures are simulated: they have the same variables, years and sector structure as the real analysis, and show the mechanism rather than the published values.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

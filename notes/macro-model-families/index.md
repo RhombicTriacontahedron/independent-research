@@ -89,7 +89,7 @@ The table summarises what each family adds and what it costs.
 - **The exchange rate is the hard variable.** Overshooting is elegant, parity is its cornerstone, and parity is the part the data most often reject.
 - **Literature evidence needs bias correction.** Weighing a puzzle by the raw count of published estimates overstates it.
 
-## Limits and next steps
+## Scope and next steps
 
 This is a study of model families, not an estimate of any one economy. The models were solved and compared for qualitative behaviour; none was taken through a full estimation against a national data set here, and the figures are illustrations, not results. The paper base was converted automatically, and a minority of entries could not be retrieved in full, so surveys drawn from it lean on the papers that were. The natural next steps are to calibrate a small open economy projection model to a chosen country, estimate the implied reduced form, and compare forecast performance of the rungs out of sample.
 
@@ -97,4 +97,4 @@ This is a study of model families, not an estimate of any one economy. The model
 
 The work was done during a career break (from 2024, with the material here dated 2025) as self-directed study, and combines written derivations, solved model runs and a structured base of over 80 papers. The one external number reported (the meta-analysis figures) comes from that paper base. Everything plotted is simulated.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

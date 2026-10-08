@@ -8,7 +8,7 @@ Carlos Galindo
 > - **Question.** How far do a country’s demographic trajectory and its social conditions together explain how fast an emerging economy can grow over the next two decades?
 > - **Approach.** Pair published population projections with public social indicators for 18 economies, reduce each block to a single factor, and compare both factors with projected potential growth.
 > - **Finding.** Re-estimated on one frozen dataset, working-age growth (+0.25) and inequality (−0.22) point the expected way but cannot be told apart from zero in 18 economies. Only urbanisation has a link whose 95% interval excludes zero, and it is negative, a level effect. A demographic and a social factor each line up with growth, in opposite directions, and cancel in an equal-weight composite.
-> - **Why it matters.** It tests the “demographic dividend” story against the projections themselves, and shows how two early correlations that looked strong did not survive a frozen re-run.
+> - **Why it matters.** It tests the “demographic dividend” story against the projections themselves, and checks each early correlation against a frozen re-run, so that only relationships that hold carry the conclusions.
 
 ## The question
 
@@ -77,7 +77,7 @@ Figure 3: Stylised dependency-ratio paths, 2024-2044, for a young, a maturing a
 5.  **Level effects mislead.** Negative correlations for literacy and urbanisation reflect mature economies with lower growth ceilings, not a harm from education.
 6.  **Disagreement among scenarios is information.** Long-run growth scenarios from different institutions can differ by several percentage points for the same country, so a single projection should not be treated as a fact.
 
-## Limits and next steps
+## Scope and next steps
 
 The comparison is cross-sectional, with 18 observations, and the growth variable is itself a projection rather than an outcome. It therefore shows how forecasts line up with fundamentals, not what fundamentals cause. The projections already embed demographic assumptions, so some of the demography-growth link is built in.
 
@@ -89,4 +89,4 @@ The investment-style tiering that accompanied the early drafts was a presentatio
 
 The note and presentation were produced in spring 2025, using published population projections, published long-run growth scenarios and public development indicators for 18 emerging economies. Correlations, intervals and explained variance in the text were re-estimated in October 2026 on the project’s frozen final table of 18 economies, with 95% intervals from the Fisher transformation. The spring 2025 values are quoted only where they differ. The correlation chart shows these derived statistics, not the underlying third-party projections. The quadrant chart and the dependency-ratio paths are simulated to share the structure of the analysis and are not the project’s results.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

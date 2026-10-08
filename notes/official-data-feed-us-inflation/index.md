@@ -22,7 +22,7 @@ The project in 2025 was to replace that manual routine with an automated feed th
 
 ### The data feed
 
-The feed draws monthly price indices for the whole published hierarchy of US consumer prices, a catalogue of 183 series spanning the headline, its groups and its components, from the statistical agency’s public programmatic interface. The history starts in January 2006 and runs to the latest release. The design goals were that it should be cheap to run, safe to repeat and honest about what it has and has not got.
+The feed draws monthly price indices for the whole published hierarchy of US consumer prices, a catalogue of 183 series spanning the headline, its groups and its components, from the statistical agency’s public programmatic interface. The history starts in January 2006 and runs to the latest release. The design goals were that it should be cheap to run, safe to repeat and explicit about its coverage.
 
 - **Change detection first.** Before downloading anything, the routine asks for a small sentinel series, usually the headline, and compares its latest period with what is stored. If nothing is new it stops. A short-lived memory of recent checks avoids repeat requests inside the same working session.
 - **Incremental updates with a revision window.** When there is news, only a recent window is re-fetched, and it overwrites the stored values for those months. The window looks back twelve months and extends further early in the year, when seasonal factors are re-estimated and the agency revises more of the recent past.
@@ -90,7 +90,7 @@ The residual is the feed’s smoke alarm. With complete coverage it is close to 
 - **Check before you fetch.** A sentinel query avoids the cost of a full pull when nothing has been published, which respects the provider’s limits and makes scheduling cheap.
 - **Match on structure first, names second.** Name matching worked for most components but needed leaf filtering and a handful of manual synonyms. Prior structure in the codes carried most of the load.
 
-## Limits and next steps
+## Scope and next steps
 
 The feed is a data layer, not a forecast. It does not show forecast accuracy, and nothing here claims that the decomposition improves predictions of inflation. The simulated figures illustrate the construction; they are not results.
 
@@ -102,4 +102,4 @@ The next steps are a union of all weight vintages for fuller historical coverage
 
 The work was carried out in 2025 on monthly US consumer price data from January 2006 onward. The statements about the feed’s design, the 175-of-183 name match and the weight construction come from the project’s own documentation and outputs. All figures here use simulated data with the same structure, and the numbers in them are illustrative.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

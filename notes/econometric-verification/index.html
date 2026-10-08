@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#what-the-work-shows" id="toc-what-the-work-shows" class="nav-link" data-scroll-target="#what-the-work-shows">What the work shows</a></li>
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#limits-and-next-steps" id="toc-limits-and-next-steps" class="nav-link" data-scroll-target="#limits-and-next-steps">Limits and next steps</a></li>
+  <li><a href="#scope-and-next-steps" id="toc-scope-and-next-steps" class="nav-link" data-scroll-target="#scope-and-next-steps">Scope and next steps</a></li>
   <li><a href="#about-the-evidence" id="toc-about-the-evidence" class="nav-link" data-scroll-target="#about-the-evidence">About the evidence</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
@@ -248,20 +248,20 @@ Figure&nbsp;3: Share of series with a non-airline model, by automation level (si
 <ol type="1">
 <li><strong>Matching your own earlier output is not correctness.</strong> Reproducing a stored result shows a refactor preserved behaviour. Correctness needs a second source: known-value fixtures, and a live recomputation.</li>
 <li><strong>Stand-in checks cannot find interface faults.</strong> The live runs revealed faults in how results were retrieved that the stand-in tests were structurally unable to see. Where a tool talks to real software, a real run belongs in the test plan.</li>
-<li><strong>Precision beats coverage in automatic checks.</strong> A short rule list with a zero-false-alarm guarantee is used; a broad one is switched off. The honest outcome of the design review was to cut the proposed rule additions that could not meet that bar.</li>
+<li><strong>Precision beats coverage in automatic checks.</strong> A short rule list with a zero-false-alarm guarantee is used; a broad one is switched off. The design review therefore kept only the rule additions that meet that bar.</li>
 <li><strong>Verification finds the author’s own mistakes.</strong> The sharpest finding was an overstatement in a draft paper, caught because the numbers had been regenerated rather than recalled.</li>
 <li><strong>Cite the source of every answer.</strong> Returning the reference alongside each lookup turns “the machine said so” into something a reader can check.</li>
 </ol>
 </section>
-<section id="limits-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="limits-and-next-steps">Limits and next steps</h2>
+<section id="scope-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
 <p>The checks cover a small set of documented traps. It cannot judge whether a model is appropriate, and some real errors, such as claiming model identification at a setting that does not perform it, depend on intent and cannot be found by reading code. The reference index covers the commands extracted so far, not the full language. Some components have so far been validated only on crafted cases, and everything has been run in a single computing environment, so portability is unproven.</p>
 <p>Next steps are a wider set of crafted raw outputs, validation of the second connection route, and extending the same regenerate-and-compare discipline from seasonal-adjustment diagnostics to estimated model coefficients and forecasts.</p>
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
 <p>The work was done in 2025–2026 during a career break and draws on a documented reference index, an archived set of model runs, and the validation record of the tools. The figures on this page are simulated to show structure only; counts and findings in the text come from the project’s own records.</p>
-<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
+<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 
 </section>
@@ -677,7 +677,7 @@ Figure&nbsp;3: Share of series with a non-airline model, by automation level (si
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Figures marked <em>simulated</em> illustrate the analysis; they are not its results.</p>
+<p>Figures marked <em>simulated</em> show the shape of each analysis; results are stated in the text.</p>
 </div>
   </div>
 </footer>

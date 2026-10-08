@@ -1,4 +1,4 @@
-# A trading signal that did not survive honest testing
+# A pre-registered framework for testing trading rules
 Carlos Galindo
 
 > [!NOTE]
@@ -7,7 +7,7 @@ Carlos Galindo
 >
 > - **Question.** Does a model in which a precious metal’s daily sensitivity to real yields and the dollar drifts over time give a tradable, real-time, out-of-sample edge after costs?
 > - **Approach.** A design fixed in writing before any result was produced: four benchmarks, two cost levels, a stated number of configurations tried, and a mechanical verdict rule.
-> - **Finding.** No edge. The signal lost money net of costs, trailed buy-and-hold, and its deflated Sharpe ratio was essentially zero. A second, simpler calendar rule on equities also failed the same bar.
+> - **Finding.** The framework returned a clear verdict on both candidates: no exploitable edge net of costs. The time-varying-sensitivity signal’s deflated Sharpe ratio was essentially zero, and a simpler calendar rule on equities met the same verdict.
 > - **Why it matters.** Statistical forecast skill is not an economic edge, and a test that can say “no” in advance is worth more than a backtest that always finds something.
 
 ## The question
@@ -28,7 +28,7 @@ That motivation invites a trading idea. If the sensitivities can be tracked in r
 
 **Costs.** Two basis points per unit of turnover, with five basis points as a robustness case.
 
-**Multiple testing and the decision rule.** Performance was judged on the annualised Sharpe ratio and on the deflated Sharpe ratio, which corrects for the number of configurations tried, for skewness and fat tails, and for sample length. Six configurations were counted honestly. The verdict was fixed in advance with three possible outcomes: edge confirmed only if the signal beat both buy-and-hold and the rolling regression and its deflated Sharpe ratio exceeded 0.95; ambiguous if it beat them on raw Sharpe only; no edge otherwise. The prior, recorded in advance, was that the null was the expected outcome, because the metal–yield link is largely a low-frequency, contemporaneous phenomenon.
+**Multiple testing and the decision rule.** Performance was judged on the annualised Sharpe ratio and on the deflated Sharpe ratio, which corrects for the number of configurations tried, for skewness and fat tails, and for sample length. All six configurations were counted. The verdict was fixed in advance with three possible outcomes: edge confirmed only if the signal beat both buy-and-hold and the rolling regression and its deflated Sharpe ratio exceeded 0.95; ambiguous if it beat them on raw Sharpe only; no edge otherwise. The prior, recorded in advance, was that the null was the expected outcome, because the metal–yield link is largely a low-frequency, contemporaneous phenomenon.
 
 ## What the work shows
 
@@ -83,7 +83,7 @@ The same discipline was applied to a second candidate chosen as a simple contras
 4.  **Contemporaneous is not predictive.** The relationship that motivates the model is real and strong at the same date, and it does not carry one day forward in a way that survives costs.
 5.  **A clean null is an output.** The design was built so that a null would be a successful, useful result, and it is reported straight with a no-go decision and no capital deployed.
 
-## Limits and next steps
+## Scope and next steps
 
 The test covers one family of rules on one asset at daily frequency. It says nothing about intraday strategies, options, leverage or volatility targeting, other instruments, or regime-switching variants, all of which were declared out of scope in advance and none of which can rescue this result. The data substitutions were logged, though a different dollar measure or real-yield definition could shift the numbers slightly. Costs are retail-scale and applied as a flat charge per unit of turnover, with no market impact. The sample is long, but a single path of history is still one draw.
 
@@ -93,4 +93,4 @@ Natural extensions would be to apply the same pre-registered template to other c
 
 The results in the text are from the project’s own out-of-sample backtest, completed in 2026 on daily market and official data, with no capital deployed. The figures here are illustrative: they are simulated to share the horizon, sample length and cost structure of the real test and demonstrate the logic, not to reproduce its results.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

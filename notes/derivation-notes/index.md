@@ -76,7 +76,7 @@ Figure 3: Simulated debt-ratio paths for three primary-balance settings, with a
 - **Removing expectations is a modelling decision with a known cost.** The implied autoregression is a clean benchmark precisely because it is blind to policy credibility.
 - **Pedagogy and audit are the same thing.** Writing each step so a newcomer can follow it is also the fastest way to find the step that does not follow.
 
-## Limits and next steps
+## Scope and next steps
 
 These are derivation and explanation notes, not estimation. The coefficients in the worked examples are illustrative calibrations, chosen to make the algebra concrete; they are not estimates from data and should not be read as such. The three-equation system is closed-economy and uses a single shock. The projection-model notes derive the autoregressive form and set out the inputs it needs, but do not report an estimated model.
 
@@ -86,4 +86,4 @@ The explanatory notes on the New Keynesian model and on debt dynamics were built
 
 The real content of this project is the derivations and the numerical checks of them, written in 2025. The numbers quoted in the text are the calibrated parameters and the roots computed from them; they come from the notes’ own numerical appendix. All figures in this page are simulated, and the debt paths in particular are illustrative.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

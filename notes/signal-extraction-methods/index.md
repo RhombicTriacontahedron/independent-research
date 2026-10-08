@@ -77,10 +77,10 @@ Figure 4: Long-run growth of a simulated quarterly series with crisis outliers:
 1.  **Decompose before you correlate.** A pair can share a calendar and a trend without sharing any short-run dynamics. Splitting the series first changes the answer to “how related are they?”.
 2.  **Summary statistics average over frequency.** The ordinary correlation is a weighted average of coherence across frequencies. A relationship that lives at one cycle length is diluted, and a high value at the lowest frequency is not evidence of causal pass-through.
 3.  **Report the transformation.** Log differences and plain differences gave correlations up to about 0.05 apart. The effect is small, but it is systematic and should be disclosed.
-4.  **Check the estimator before trusting the peak.** Coherence peaks depend on segment length and overlap. Reporting the share of settings that remain significant is more honest than quoting the largest value.
+4.  **Check the estimator before trusting the peak.** Coherence peaks depend on segment length and overlap. Reporting the share of settings that remain significant is more informative than quoting the largest value.
 5.  **Robust growth rates are cheap insurance.** One or two crisis quarters can shift an average growth rate by more than its sampling error, and a robust estimate with a recursive band shows how much a number can be trusted.
 
-## Limits and next steps
+## Scope and next steps
 
 The application covers five pairs of US price series, and a refutation of one claim for those series is not a general statement about price pass-through. Coherence is not causation: common drivers could produce coupling in the business-cycle band. The size and variance share of the frequency-selective link has not been quantified, and the claim that it has forecasting value has not been tested. The natural next step is a forecasting experiment in which a band-limited component of producer prices is used to predict consumer service inflation out of sample, compared with a naive benchmark. The cross-country long-run growth estimates also need to be re-run and tabulated before they are shown.
 
@@ -88,4 +88,4 @@ The application covers five pairs of US price series, and a refutation of one cl
 
 The application uses public monthly price series for the United States from late 2009, about 196 observations per series, and the decomposition work was applied to US and Mexican price and activity series. The first three figures are drawn from those public series and the stored decompositions; the long-run growth figure uses simulated data. The numbers in the text are the project’s own results from the real series. The work was done from 2025 to 2026, as part of a rebuild of an applied research toolkit.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

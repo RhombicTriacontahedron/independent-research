@@ -77,7 +77,7 @@ Two economies with the same total premium can have very different parts, and the
 4.  **Scenarios beat point forecasts for decisions.** A set of weighted paths, each with a named trigger, is something a user can monitor; a single number is not.
 5.  **Calibration should be visible.** Illustrative weights are acceptable if they are exposed and labelled. The earlier version of the worked case overwrote the computed tactical premium with a sourced figure; removing that override kept the results driven by the inputs rather than by the answer expected.
 
-## Limits and next steps
+## Scope and next steps
 
 The weights linking drivers to premiums are illustrative and were not estimated from a panel, so the scenario probabilities are structured judgements, not forecasts with a track record. The political scores are analyst-assigned and will differ between analysts. The simulation treats the yield shock in a tail regime as a single draw, with no dynamics after the shock. The model is not a full structural solution: the fiscal block is minimal and the political terms enter as additive premiums rather than inside a policy rule.
 
@@ -87,4 +87,4 @@ The next steps are the ones flagged for drill-down: show the calibrated outputs 
 
 The work was done between 2025 and 2026 on public macro, fiscal and market data for Poland and four other economies. The worked case rests on a late-2025 snapshot. The three figures are simulated, built to share the structure of the analysis (a twelve-month horizon at daily frequency, a logistic tail link, five economies); none shows a real estimate.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

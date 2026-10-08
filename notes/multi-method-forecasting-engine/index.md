@@ -1,11 +1,11 @@
-# One engine, many forecasting methods, tested the hard way
+# One engine, many forecasting methods, back-tested across 20 economies
 Carlos Galindo
 
 > [!NOTE]
 >
 > ### At a glance
 >
-> - **Question.** Can one automated engine produce credible monthly price forecasts for many economies, and can we say honestly whether it beats a simple benchmark?
+> - **Question.** Can one automated engine produce credible monthly price forecasts for many economies, and can we say rigorously whether it beats a simple benchmark?
 > - **Approach.** Per series: remove seasonality, fit several regression-based forecasts, combine them using their track record, and judge the result in a rolling back-test against a naive forecast.
 > - **Finding.** The engine was rebuilt and back-tested for price forecasts in 20 economies, including the UK, over 2024–2025. The design makes the comparison with a naive benchmark routine rather than an afterthought.
 > - **Why it matters.** Forecast users need to know not just a number but whether the method behind it earns its complexity.
@@ -70,11 +70,11 @@ Figure 3: One simulated economy: a rolling set of forecast paths launched from 
 
 1.  **Build the benchmark into the engine.** The naive forecast is produced for every series every time, so that “does this beat doing nothing clever?” is answered by default.
 2.  **Keep the ensemble, not a winner.** Selecting the best-looking model per series rewards luck. Retaining several and combining them on track record is a cheap hedge against specification error.
-3.  **A back-test is only as honest as its information set.** Everything, including variable selection, must be redone from the data available at each origin. A test that lets any later information leak (a later benchmark forecast, a better-informed oil price path) will flatter the model. Reviewing the wider forecasting system later made this concrete: the settings that make a test honest are not always the defaults, and an engine should say so on its face.
+3.  **A back-test is only as reliable as its information set.** Everything, including variable selection, must be redone from the data available at each origin. A test that lets any later information leak (a later benchmark forecast, a better-informed oil price path) will flatter the model. Reviewing the wider forecasting system later made this concrete: the settings that make a test clean are not always the defaults, and an engine should say so on its face.
 4.  **Automation needs graceful failure.** Robust estimation with a fall-back, and break-tolerant specifications, keep a twenty-economy run going when one series misbehaves.
 5.  **Judge the distribution of outcomes.** Report how many economies and horizons beat the benchmark, and by how much, rather than the best case.
 
-## Limits and next steps
+## Scope and next steps
 
 The sources I salvaged document the design of the engine and the existence of back-test runs for 2024–2025; they do not contain a finished results table, so this note makes no claim about how large the gains over the naive benchmark were. The figures here are simulated and show the method’s logic only.
 
@@ -84,4 +84,4 @@ The forecasts also depend on the quality of the underlying price data, which dif
 
 The work is real and was done during an independent research period, May 2024 onward: a rebuilt automated engine, applied in back-tests to price forecasts in 20 economies including the UK, in 2024–2025, and developed with AI assistance as a systems architect. What you see on this page is illustrative. Every figure is simulated.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

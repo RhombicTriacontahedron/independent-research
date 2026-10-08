@@ -72,9 +72,9 @@ Figure 3: Illustrative lag profile: association between a producer-price margin
 
 **Producer prices are timely, and timing is the point.** The producer-price release precedes the consumption price release, so the translation is most useful in the days before the print, when the other forecasters are also updating. That is where a small edge, if there is one, is found.
 
-**Honest scoring is the discipline.** The test was against named outside benchmarks over a defined twelve-month window, with the result reported as it came out: competitive, and not ahead.
+**Transparent scoring is the discipline.** The test was against named outside benchmarks over a defined twelve-month window, with the result reported as it came out: competitive, and not ahead.
 
-## Limits and next steps
+## Scope and next steps
 
 The window is twelve monthly observations. That is enough to say the system is not an outlier among bank forecasters, and too short to rank it precisely against them or against the median. A difference of a few hundredths of a percentage point per month between forecasters is within what one or two unusual months can produce.
 
@@ -86,4 +86,4 @@ Two extensions would strengthen the work. First, a longer scored history, with f
 
 The scoring window runs from October 2023 to September 2024, with the rebuild carried out during the career break, from May 2024. The comparison uses four bank forecasts and the survey consensus from Bloomberg survey data (2024); the data is licensed, so only the summary result is stated. All figures here are simulated and illustrate the method and the scoring layout.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

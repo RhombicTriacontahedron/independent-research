@@ -180,7 +180,7 @@
 \@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
 \makeatother
 \hypersetup{
-  pdftitle={A trading signal that did not survive honest testing},
+  pdftitle={A pre-registered framework for testing trading rules},
   pdfauthor={Carlos Galindo},
   pdflang={en-GB},
   colorlinks=true,
@@ -191,16 +191,16 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\title{A trading signal that did not survive honest testing}
+\title{A pre-registered framework for testing trading rules}
 \usepackage{etoolbox}
 \makeatletter
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
   \apptocmd{\@title}{\par {\large #1 \par}}{}{}
 }
 \makeatother
-\subtitle{A pre-registered, net-of-cost, out-of-sample test of a
-time-varying-sensitivity trading rule found no edge, and the null was
-reported as such}
+\subtitle{A net-of-cost, out-of-sample design, corrected for multiple
+testing, that separates genuine predictive power from data-mined
+results, applied to a time-varying-sensitivity rule and a calendar rule}
 \author{Carlos Galindo}
 \date{}
 \begin{document}
@@ -222,9 +222,11 @@ reported as such}
   produced: four benchmarks, two cost levels, a stated number of
   configurations tried, and a mechanical verdict rule.
 \item
-  \textbf{Finding.} No edge. The signal lost money net of costs, trailed
-  buy-and-hold, and its deflated Sharpe ratio was essentially zero. A
-  second, simpler calendar rule on equities also failed the same bar.
+  \textbf{Finding.} The framework returned a clear verdict on both
+  candidates: no exploitable edge net of costs. The
+  time-varying-sensitivity signal's deflated Sharpe ratio was
+  essentially zero, and a simpler calendar rule on equities met the same
+  verdict.
 \item
   \textbf{Why it matters.} Statistical forecast skill is not an economic
   edge, and a test that can say ``no'' in advance is worth more than a
@@ -291,8 +293,8 @@ points as a robustness case.
 \textbf{Multiple testing and the decision rule.} Performance was judged
 on the annualised Sharpe ratio and on the deflated Sharpe ratio, which
 corrects for the number of configurations tried, for skewness and fat
-tails, and for sample length. Six configurations were counted honestly.
-The verdict was fixed in advance with three possible outcomes: edge
+tails, and for sample length. All six configurations were counted. The
+verdict was fixed in advance with three possible outcomes: edge
 confirmed only if the signal beat both buy-and-hold and the rolling
 regression and its deflated Sharpe ratio exceeded 0.95; ambiguous if it
 beat them on raw Sharpe only; no edge otherwise. The prior, recorded in
@@ -423,7 +425,7 @@ Verdict: no edge, reported the same way.
   with a no-go decision and no capital deployed.
 \end{enumerate}
 
-\subsection{Limits and next steps}\label{limits-and-next-steps}
+\subsection{Scope and next steps}\label{scope-and-next-steps}
 
 The test covers one family of rules on one asset at daily frequency. It
 says nothing about intraday strategies, options, leverage or volatility
@@ -451,9 +453,9 @@ and demonstrate the logic, not to reproduce its results.
 
 Figures and tables marked \emph{simulated} are generated from simulated
 data built to share the structure of the analysis (its variables,
-horizons and frequencies). They show how the method works and what its
-output looks like; they are not the project's results. Results stated in
-the text are the project's own. Methods are described at the level of a
+horizons and frequencies). They show how each method works and what its
+output looks like. Results stated in the text, and figures that give a
+source, are the project's own. Methods are described at the level of a
 methods section. Code and data pipelines are not reproduced here.
 
 

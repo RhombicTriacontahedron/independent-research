@@ -9,7 +9,7 @@
 <meta name="author" content="Carlos Galindo">
 <meta name="description" content="How a multi-method inflation forecasting engine was rebuilt and back-tested across 20 economies, and what a fair out-of-sample test demands.">
 
-<title>One engine, many forecasting methods, tested the hard way – Independent research, 2024–2026</title>
+<title>One engine, many forecasting methods, back-tested across 20 economies – Independent research, 2024–2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#what-the-work-shows" id="toc-what-the-work-shows" class="nav-link" data-scroll-target="#what-the-work-shows">What the work shows</a></li>
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#limits-and-next-steps" id="toc-limits-and-next-steps" class="nav-link" data-scroll-target="#limits-and-next-steps">Limits and next steps</a></li>
+  <li><a href="#scope-and-next-steps" id="toc-scope-and-next-steps" class="nav-link" data-scroll-target="#scope-and-next-steps">Scope and next steps</a></li>
   <li><a href="#about-the-evidence" id="toc-about-the-evidence" class="nav-link" data-scroll-target="#about-the-evidence">About the evidence</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">One engine, many forecasting methods, tested the hard way</h1>
+<h1 class="title">One engine, many forecasting methods, back-tested across 20 economies</h1>
 <p class="subtitle lead">An automated price-forecasting engine that fits several methods per series, combines them, and is back-tested against a naive benchmark</p>
   <div class="quarto-categories">
     <div class="quarto-category">Inflation forecasting</div>
@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><strong>Question.</strong> Can one automated engine produce credible monthly price forecasts for many economies, and can we say honestly whether it beats a simple benchmark?</li>
+<li><strong>Question.</strong> Can one automated engine produce credible monthly price forecasts for many economies, and can we say rigorously whether it beats a simple benchmark?</li>
 <li><strong>Approach.</strong> Per series: remove seasonality, fit several regression-based forecasts, combine them using their track record, and judge the result in a rolling back-test against a naive forecast.</li>
 <li><strong>Finding.</strong> The engine was rebuilt and back-tested for price forecasts in 20 economies, including the UK, over 2024–2025. The design makes the comparison with a naive benchmark routine rather than an afterthought.</li>
 <li><strong>Why it matters.</strong> Forecast users need to know not just a number but whether the method behind it earns its complexity.</li>
@@ -254,20 +254,20 @@ Figure&nbsp;3: One simulated economy: a rolling set of forecast paths launched f
 <ol type="1">
 <li><strong>Build the benchmark into the engine.</strong> The naive forecast is produced for every series every time, so that “does this beat doing nothing clever?” is answered by default.</li>
 <li><strong>Keep the ensemble, not a winner.</strong> Selecting the best-looking model per series rewards luck. Retaining several and combining them on track record is a cheap hedge against specification error.</li>
-<li><strong>A back-test is only as honest as its information set.</strong> Everything, including variable selection, must be redone from the data available at each origin. A test that lets any later information leak (a later benchmark forecast, a better-informed oil price path) will flatter the model. Reviewing the wider forecasting system later made this concrete: the settings that make a test honest are not always the defaults, and an engine should say so on its face.</li>
+<li><strong>A back-test is only as reliable as its information set.</strong> Everything, including variable selection, must be redone from the data available at each origin. A test that lets any later information leak (a later benchmark forecast, a better-informed oil price path) will flatter the model. Reviewing the wider forecasting system later made this concrete: the settings that make a test clean are not always the defaults, and an engine should say so on its face.</li>
 <li><strong>Automation needs graceful failure.</strong> Robust estimation with a fall-back, and break-tolerant specifications, keep a twenty-economy run going when one series misbehaves.</li>
 <li><strong>Judge the distribution of outcomes.</strong> Report how many economies and horizons beat the benchmark, and by how much, rather than the best case.</li>
 </ol>
 </section>
-<section id="limits-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="limits-and-next-steps">Limits and next steps</h2>
+<section id="scope-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
 <p>The sources I salvaged document the design of the engine and the existence of back-test runs for 2024–2025; they do not contain a finished results table, so this note makes no claim about how large the gains over the naive benchmark were. The figures here are simulated and show the method’s logic only.</p>
 <p>The forecasts also depend on the quality of the underlying price data, which differ in revisions and definitions across economies. Point accuracy is judged here; calibrated probability bands would need a separate evaluation. Next steps are to re-extract the stored back-test results into a clean per-economy table, add a UK panel, and test whether the combination weights remain stable across origins.</p>
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
 <p>The work is real and was done during an independent research period, May 2024 onward: a rebuilt automated engine, applied in back-tests to price forecasts in 20 economies including the UK, in 2024–2025, and developed with AI assistance as a systems architect. What you see on this page is illustrative. Every figure is simulated.</p>
-<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
+<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 
 </section>
@@ -683,7 +683,7 @@ Figure&nbsp;3: One simulated economy: a rolling set of forecast paths launched f
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Figures marked <em>simulated</em> illustrate the analysis; they are not its results.</p>
+<p>Figures marked <em>simulated</em> show the shape of each analysis; results are stated in the text.</p>
 </div>
   </div>
 </footer>

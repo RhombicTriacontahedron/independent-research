@@ -180,7 +180,7 @@
 \@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
 \makeatother
 \hypersetup{
-  pdftitle={One engine{,} many forecasting methods{,} tested the hard way},
+  pdftitle={One engine{,} many forecasting methods{,} back-tested across 20 economies},
   pdfauthor={Carlos Galindo},
   pdflang={en-GB},
   colorlinks=true,
@@ -191,7 +191,8 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\title{One engine, many forecasting methods, tested the hard way}
+\title{One engine, many forecasting methods, back-tested across 20
+economies}
 \usepackage{etoolbox}
 \makeatletter
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
@@ -215,8 +216,8 @@ benchmark}
 \tightlist
 \item
   \textbf{Question.} Can one automated engine produce credible monthly
-  price forecasts for many economies, and can we say honestly whether it
-  beats a simple benchmark?
+  price forecasts for many economies, and can we say rigorously whether
+  it beats a simple benchmark?
 \item
   \textbf{Approach.} Per series: remove seasonality, fit several
   regression-based forecasts, combine them using their track record, and
@@ -392,12 +393,12 @@ forecast paths launched from successive origins (simulated data).}
   model per series rewards luck. Retaining several and combining them on
   track record is a cheap hedge against specification error.
 \item
-  \textbf{A back-test is only as honest as its information set.}
+  \textbf{A back-test is only as reliable as its information set.}
   Everything, including variable selection, must be redone from the data
   available at each origin. A test that lets any later information leak
   (a later benchmark forecast, a better-informed oil price path) will
   flatter the model. Reviewing the wider forecasting system later made
-  this concrete: the settings that make a test honest are not always the
+  this concrete: the settings that make a test clean are not always the
   defaults, and an engine should say so on its face.
 \item
   \textbf{Automation needs graceful failure.} Robust estimation with a
@@ -409,7 +410,7 @@ forecast paths launched from successive origins (simulated data).}
   case.
 \end{enumerate}
 
-\subsection{Limits and next steps}\label{limits-and-next-steps}
+\subsection{Scope and next steps}\label{scope-and-next-steps}
 
 The sources I salvaged document the design of the engine and the
 existence of back-test runs for 2024--2025; they do not contain a
@@ -434,9 +435,9 @@ illustrative. Every figure is simulated.
 
 Figures and tables marked \emph{simulated} are generated from simulated
 data built to share the structure of the analysis (its variables,
-horizons and frequencies). They show how the method works and what its
-output looks like; they are not the project's results. Results stated in
-the text are the project's own. Methods are described at the level of a
+horizons and frequencies). They show how each method works and what its
+output looks like. Results stated in the text, and figures that give a
+source, are the project's own. Methods are described at the level of a
 methods section. Code and data pipelines are not reproduced here.
 
 

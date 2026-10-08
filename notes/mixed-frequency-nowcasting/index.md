@@ -78,9 +78,9 @@ The first figure shows the mechanism: quarterly figures pin down the three-month
 4.  **Attribution belongs in the state space.** Mapping feature contributions through the input matrix onto the latent states makes an opaque predictor answer the question a macroeconomist would ask: which state moved, and why.
 5.  **Alignment bugs are silent.** Misaligned calendar periods produce empty quarterly columns, not errors. A minimal reality check on the output, not only on the code, found it.
 
-## Limits and next steps
+## Scope and next steps
 
-The honest status is a working prototype. It has not been evaluated out of sample on real data, so it makes no claim about forecast accuracy or about whether the shock module adds value in practice. The module was trained and exercised on simulated data only. The model is linear in its core and has a single latent-factor flavour, with no treatment of data revisions or of publication-date calendars.
+The current status is a working prototype. It has not been evaluated out of sample on real data, so it makes no claim about forecast accuracy or about whether the shock module adds value in practice. The module was trained and exercised on simulated data only. The model is linear in its core and has a single latent-factor flavour, with no treatment of data revisions or of publication-date calendars.
 
 Three steps would turn it into evidence. First, assemble a real-time vintage dataset for one economy and run a pseudo-real-time test by information vintage against a simple benchmark. Second, train the shock module on genuine event features and report its cross-validated error, then test whether it improves the nowcast. Third, add a revision model so that early releases are treated as noisy measurements of later ones.
 
@@ -88,4 +88,4 @@ Three steps would turn it into evidence. First, assemble a real-time vintage dat
 
 The work is an independent prototype built during a career break, in 2025, and it was documented through design notes, a staged plan with acceptance tests, and generated reports. It was run on simulated mixed-frequency data of a few monthly states, daily series aggregated to months, and quarterly figures. It has no real-data results. All figures on this page are simulated.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

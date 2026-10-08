@@ -78,7 +78,7 @@ Figure 3: Composite external-vulnerability score by family for eight emerging m
 4.  **Indicators are not independent.** Mapping which measures are inputs and which are outcomes prevents double-counting and shows where one shock would register in several measures at once.
 5.  **Write down the swing factor.** Naming what would change the view turns commentary into a testable statement and makes the next update easier.
 
-## Limits and next steps
+## Scope and next steps
 
 This was a monitoring exercise, not an estimated model. The notes organise reasoning and evidence; they do not quantify the weight of each force, and the vulnerability framework was not calibrated against a history of crises. The sources are the maps and notes themselves, so the quantitative results behind individual calls are not reproduced here.
 
@@ -88,4 +88,4 @@ The natural next step is calibration. With a panel of past episodes, one could e
 
 The work is real: June to September 2024, covering inflation and monetary policy in about a dozen economies and a framework for external-debt vulnerability in emerging markets, produced as short notes and causal maps. Market-survey inputs were used only as summary findings from Bloomberg survey data (2024). Everything shown as a figure on this page is illustrative and generated for this page.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

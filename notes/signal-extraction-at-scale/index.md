@@ -8,7 +8,7 @@ Carlos Galindo
 > - **Question.** Which economic series share a common cyclical signal, once seasonality and trend are removed, when the number of candidate pairs is far too large to inspect by hand or to compute in one run?
 > - **Approach.** Decompose each series into trend, seasonal and residual parts, measure how each pair of residuals moves together across frequencies, and run the work in resumable batches with a persistent record of every pair already analysed.
 > - **Finding.** The system analysed more than 72,000 pairs of economic series in 2025, drawn from a universe of roughly 82 million possible pairs, and kept every result queryable.
-> - **Why it matters.** Co-movement screens are only credible when the search is wide, repeatable and honest about what it has not yet covered. This is the machinery for that.
+> - **Why it matters.** Co-movement screens are only credible when the search is wide, repeatable and explicit about what it covers. This is the machinery for that.
 
 ## The question
 
@@ -86,7 +86,7 @@ When a large share of unrelated pairs is screened, some will show high maximum c
 4.  **Design for interruption.** Long jobs fail. Atomic writes, bulk batching and a fallback path meant that a failed run cost one batch rather than the whole search.
 5.  **Early planning documents were worth keeping.** The written plans for tracking, storage and the pairwise matrix made the later acceleration work a refactor rather than a rewrite.
 
-## Limits and next steps
+## Scope and next steps
 
 The screen finds candidates, not causes. High coherence between two series says they share movement at some frequency; it does not say why, and in a very large search some of it will be chance. Pairs of interest need a second stage: stability across sub-periods, a correction for the number of pairs searched, and an economic story.
 
@@ -96,4 +96,4 @@ The coverage is also thin by construction, under one tenth of one per cent of po
 
 The project ran in 2025, during a period of independent research. The scale figures (the number of series, the size of the pair space and the number of pairs analysed) come from the project’s planning documents and my record of the work. The decomposition and coherence design described above is what the infrastructure implements. All figures on this page are simulated, built to share the structure of the real analysis (monthly series, a twelve-period seasonal cycle, residual comparison by frequency and a large pool of candidate pairs).
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

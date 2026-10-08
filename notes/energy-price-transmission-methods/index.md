@@ -73,7 +73,7 @@ This is consistent with how fuel was priced there. For decades, gasoline and die
 - **The border shows up as a region, not as a product.** Gasoline is integrated within each country. The one cross-border link runs through a single Mexican region, and the same region is the least connected to the rest of Mexico.
 - **Robustness checks separate leads from artefacts.** Trimming removed one of the screen’s two cross-border energy pairs. The time-shift test sorted the regional pairs into those that hold at the true alignment and those that do not.
 
-## Limits and next steps
+## Scope and next steps
 
 Coherence averaged over all frequencies says that two surprise series move together, not which leads, by how much, or at what horizon. The natural next step is to report phase and gain by frequency band for the four northern-border pairs. Splitting the sample at 2017 would then test whether the border region’s link to the United States changed with liberalisation, which would turn the policy reading from “consistent with” into a test.
 
@@ -85,4 +85,4 @@ The robust anomaly, a single US city’s motor-fuel index moving closely with Me
 
 The screen ran in 2025 over a licensed commercial database of price and activity series. Its input is not reproduced here, and series are described by category only. The chance benchmark, the product-by-region comparison, the trimming and the time-shift tests were computed in 2026 from the screen’s own input, with an exact replica of its estimator that matches its stored values to rounding error. The first figure is simulated. The second and third plot statistics derived from the real series. The policy dates come from a 2017 industry report on Mexico’s fuel-price liberalisation and from the text of the January 2017 federal notice.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

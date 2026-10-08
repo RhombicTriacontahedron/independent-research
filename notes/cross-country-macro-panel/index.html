@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#what-the-work-shows" id="toc-what-the-work-shows" class="nav-link" data-scroll-target="#what-the-work-shows">What the work shows</a></li>
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#limits-and-next-steps" id="toc-limits-and-next-steps" class="nav-link" data-scroll-target="#limits-and-next-steps">Limits and next steps</a></li>
+  <li><a href="#scope-and-next-steps" id="toc-scope-and-next-steps" class="nav-link" data-scroll-target="#scope-and-next-steps">Scope and next steps</a></li>
   <li><a href="#about-the-evidence" id="toc-about-the-evidence" class="nav-link" data-scroll-target="#about-the-evidence">About the evidence</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
@@ -386,20 +386,20 @@ Figure&nbsp;3: Early-warning screen, private non-financial sector. Left: credit-
 <h2 class="anchored" data-anchor-id="insights">Insights</h2>
 <ol type="1">
 <li><strong>Build the panel before the model.</strong> Most of the value sat in the harmonised, rule-governed panel. Once definitions, frequencies and aggregation are fixed, each new question becomes a short exercise rather than a new data project.</li>
-<li><strong>Respect frequency.</strong> Refusing to forward-fill quarterly data into months costs some coverage but avoids spurious precision. Separate monthly and quarterly panels keep the claim honest.</li>
+<li><strong>Respect frequency.</strong> Refusing to forward-fill quarterly data into months costs some coverage but avoids spurious precision. Separate monthly and quarterly panels keep each claim precise.</li>
 <li><strong>Instrument sets must suit the sample.</strong> With five countries and many months, a large dynamic instrument set produced a pathological test statistic and a spurious policy effect. A parsimonious set gave a credible result. This lesson transfers to any small-N dynamic panel.</li>
 <li><strong>A data correction can change conclusions.</strong> Fixing one country’s price series changed the size and significance of several coefficients, which is why every series carries its provenance.</li>
 <li><strong>Some gaps are real.</strong> For some countries, series such as quarterly government debt, core inflation or debt-service ratios have no public source. Recording those gaps explicitly is better than filling them with proxies.</li>
 </ol>
 </section>
-<section id="limits-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="limits-and-next-steps">Limits and next steps</h2>
+<section id="scope-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
 <p>The panel has only five economies, so the results describe a small group, not emerging markets in general. Estimates are contemporaneous and linear; they do not capture thresholds or longer credit lags, and the volatility effect may partly reflect common global demand. The activity model uses one output measure and should be extended to labour-market and external-account outcomes. The downstream step, turning the diagnostics into regular written macro briefs, has been designed but not built. The early-warning screen applies a published threshold to the credit gap only; it sets none for the debt-service ratio and has not been tested out of sample, so it describes where jurisdictions stand rather than predicting crises.</p>
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
 <p>The panel and the dynamic-panel estimates are the project’s own work during a career break, from late 2025 to early 2026, built with AI assistance under my direction as systems architect. The text and the table report real results from that work; the table was re-fitted from the stored panel, which reproduces the reported estimates exactly. The first two figures are simulated to share its structure (five units, monthly frequency) and are not the project’s estimates. The early-warning figure is real: new work from October 2026 on the BIS’s public series, with the screen’s rules fixed before it was first run; the count over time was added afterwards as a description.</p>
-<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
+<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 
 </section>
@@ -815,7 +815,7 @@ Figure&nbsp;3: Early-warning screen, private non-financial sector. Left: credit-
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Figures marked <em>simulated</em> illustrate the analysis; they are not its results.</p>
+<p>Figures marked <em>simulated</em> show the shape of each analysis; results are stated in the text.</p>
 </div>
   </div>
 </footer>

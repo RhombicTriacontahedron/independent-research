@@ -54,7 +54,7 @@ Figure 2: Rolling 24-month correlation of Polish and German output growth, thre
 
 ### No discrete break
 
-Output growth momentum slowed from a pre-2022 mean of +0.448 per cent to a post-2022 mean of +0.147 per cent per quarter-on-quarter-style step, a shift of about 0.30 percentage points, which is meaningful but not catastrophic. The Chow tests at the three pre-specified dates give p-values of 0.22 for the financial crisis, 0.69 for the pandemic and 0.23 for the 2022 shock. None is significant. The slowdown is gradual. That is the basis for the headline: a gradual decoupling, not a structural break. The tests are honest about their limits: the post-shock sample is only a few dozen months, so low power could hide a real change, and the null of a cyclical divergence cannot be rejected either.
+Output growth momentum slowed from a pre-2022 mean of +0.448 per cent to a post-2022 mean of +0.147 per cent per quarter-on-quarter-style step, a shift of about 0.30 percentage points, which is meaningful but not catastrophic. The Chow tests at the three pre-specified dates give p-values of 0.22 for the financial crisis, 0.69 for the pandemic and 0.23 for the 2022 shock. None is significant. The slowdown is gradual. That is the basis for the headline: a gradual decoupling, not a structural break. The tests state their scope: the post-shock sample is only a few dozen months, so low power could hide a real change, and the null of a cyclical divergence cannot be rejected either.
 
 ### Volume strength, margin weakness
 
@@ -85,10 +85,10 @@ Figure 4: Policy rate against a Taylor-rule band for a range of neutral rates (
 1.  **Level divergence and dynamic decoupling are different claims.** Output levels diverge sharply, while growth co-movement fades gradually. Arguing from the first to a “structural” label skips a step.
 2.  **Volume and margins can point in opposite directions.** The most polarising economy in the group is polarising because its volume and margin indicators disagree, so analysts disagree for good reason.
 3.  **A last observation is not a regime.** The latest correlation value is far below the window average. Reporting both keeps a tail event from being read as a permanent state.
-4.  **A rule check is only as good as its neutral rate.** Fixing the neutral rate makes the verdict a conditional statement. The honest output is a band, not a point.
+4.  **A rule check is only as good as its neutral rate.** Fixing the neutral rate makes the verdict a conditional statement. The right output is a band, not a point.
 5.  **Say what cannot be tested.** Public finances could be discussed only through bond pricing, because no fiscal balance or debt series was in the dataset. The fiscal narrative was therefore left as plausible on both sides, with bond yields placing Poland between Czechia and Hungary.
 
-## Limits and next steps
+## Scope and next steps
 
 The post-2022 sample is short, so break tests have low power. A calendar of two full business cycles would be needed to call any change structural, and that is not available. Output and policy-rate series ended earlier than prices and labour costs in the vintage used, so some results are as of an earlier date and a few current-state figures came from outside the dataset and were used as context only. The margin proxy is an index gap, not firm-level profit. Real rates use realised inflation, not expectations, and yield spreads mix sovereign risk with monetary stance. The next step is a refresh to a common end date, a sensitivity band on the neutral rate, and a longer window.
 
@@ -96,4 +96,4 @@ The post-2022 sample is short, so break tests have low power. A calendar of two 
 
 The analysis is a 2026 piece of independent work built on official monthly and quarterly statistics for four economies, with 62 series and 837 months at the longest. The figures in this note are illustrative simulations that share the structure of the real analysis. The numbers in the text are the project’s own results.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

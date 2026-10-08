@@ -71,7 +71,7 @@ Figure 3: Output growth and changes in the sovereign spread, by lag. Coefficien
 4.  **Persistence amplifies.** A small contemporaneous effect becomes a large cumulative one when output growth has a four-month half-life.
 5.  **Data validation can change conclusions.** Correcting one country’s series moved three of the headline coefficients.
 
-## Limits and next steps
+## Scope and next steps
 
 The panel has only five economies, so cross-country inference is limited and the results describe this group, not emerging markets in general. Monthly industrial output is a narrow measure of activity. The policy-rate result is a statement about a direct, linear, contemporaneous effect; it says nothing about expectations, forward guidance or effects at longer lags. The exclusion restrictions behind the instrumental-variable estimates cannot be proven, only tested for consistency, and with a small set of instruments the over-identification test has little power. Next steps are a larger panel, separate pre- and post-crisis samples, and an out-of-sample test of the spread-level lead.
 
@@ -79,4 +79,4 @@ The panel has only five economies, so cross-country inference is limited and the
 
 The study is real work on public macroeconomic and market series, covering 1999 to early 2026, carried out in an AI-assisted workflow during 2025 and 2026. All three figures show the project’s own estimates. The first two are re-fitted from the stored panel, which reproduces the reported results exactly. The spread-channel tests are new work from October 2026 on the same panel, specified before estimation.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

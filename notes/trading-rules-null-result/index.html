@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Carlos Galindo">
-<meta name="description" content="How a plausible macro-driven trading rule was tested under a fixed design, and why a clean null is a useful result.">
+<meta name="description" content="How a fixed evaluation design was built and applied to a plausible macro-driven trading rule, and why a clear verdict either way is the result such a design exists to deliver.">
 
-<title>A trading signal that did not survive honest testing – Independent research, 2024–2026</title>
+<title>A pre-registered framework for testing trading rules – Independent research, 2024–2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   <li><a href="#what-the-work-shows" id="toc-what-the-work-shows" class="nav-link" data-scroll-target="#what-the-work-shows">What the work shows</a></li>
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#limits-and-next-steps" id="toc-limits-and-next-steps" class="nav-link" data-scroll-target="#limits-and-next-steps">Limits and next steps</a></li>
+  <li><a href="#scope-and-next-steps" id="toc-scope-and-next-steps" class="nav-link" data-scroll-target="#scope-and-next-steps">Scope and next steps</a></li>
   <li><a href="#about-the-evidence" id="toc-about-the-evidence" class="nav-link" data-scroll-target="#about-the-evidence">About the evidence</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
@@ -131,8 +131,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">A trading signal that did not survive honest testing</h1>
-<p class="subtitle lead">A pre-registered, net-of-cost, out-of-sample test of a time-varying-sensitivity trading rule found no edge, and the null was reported as such</p>
+<h1 class="title">A pre-registered framework for testing trading rules</h1>
+<p class="subtitle lead">A net-of-cost, out-of-sample design, corrected for multiple testing, that separates genuine predictive power from data-mined results, applied to a time-varying-sensitivity rule and a calendar rule</p>
   <div class="quarto-categories">
     <div class="quarto-category">Methods and research infrastructure</div>
   </div>
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    How a plausible macro-driven trading rule was tested under a fixed design, and why a clean null is a useful result.
+    How a fixed evaluation design was built and applied to a plausible macro-driven trading rule, and why a clear verdict either way is the result such a design exists to deliver.
   </div>
 </div>
 
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>Question.</strong> Does a model in which a precious metal’s daily sensitivity to real yields and the dollar drifts over time give a tradable, real-time, out-of-sample edge after costs?</li>
 <li><strong>Approach.</strong> A design fixed in writing before any result was produced: four benchmarks, two cost levels, a stated number of configurations tried, and a mechanical verdict rule.</li>
-<li><strong>Finding.</strong> No edge. The signal lost money net of costs, trailed buy-and-hold, and its deflated Sharpe ratio was essentially zero. A second, simpler calendar rule on equities also failed the same bar.</li>
+<li><strong>Finding.</strong> The framework returned a clear verdict on both candidates: no exploitable edge net of costs. The time-varying-sensitivity signal’s deflated Sharpe ratio was essentially zero, and a simpler calendar rule on equities met the same verdict.</li>
 <li><strong>Why it matters.</strong> Statistical forecast skill is not an economic edge, and a test that can say “no” in advance is worth more than a backtest that always finds something.</li>
 </ul>
 </div>
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Walk-forward discipline.</strong> The two variance parameters of the filter were fitted by predictive likelihood on an expanding window of past data only and re-estimated once a year. A two-year warm-up preceded trading, which left 4,898 out-of-sample trading days from late 2006 to mid-2026. Nothing was tuned to the known 2022 to 2025 breakdown in the metal–yield relationship, and a regime-switching variant that would have been designed to fit it was explicitly excluded.</p>
 <p><strong>Benchmarks that must all be beaten.</strong> Buy-and-hold on the metal; the same signal with coefficients from a 60-day rolling regression, which isolates whether the filter adds anything; a rule that simply goes long when real yields fall; and a momentum rule.</p>
 <p><strong>Costs.</strong> Two basis points per unit of turnover, with five basis points as a robustness case.</p>
-<p><strong>Multiple testing and the decision rule.</strong> Performance was judged on the annualised Sharpe ratio and on the deflated Sharpe ratio, which corrects for the number of configurations tried, for skewness and fat tails, and for sample length. Six configurations were counted honestly. The verdict was fixed in advance with three possible outcomes: edge confirmed only if the signal beat both buy-and-hold and the rolling regression and its deflated Sharpe ratio exceeded 0.95; ambiguous if it beat them on raw Sharpe only; no edge otherwise. The prior, recorded in advance, was that the null was the expected outcome, because the metal–yield link is largely a low-frequency, contemporaneous phenomenon.</p>
+<p><strong>Multiple testing and the decision rule.</strong> Performance was judged on the annualised Sharpe ratio and on the deflated Sharpe ratio, which corrects for the number of configurations tried, for skewness and fat tails, and for sample length. All six configurations were counted. The verdict was fixed in advance with three possible outcomes: edge confirmed only if the signal beat both buy-and-hold and the rolling regression and its deflated Sharpe ratio exceeded 0.95; ambiguous if it beat them on raw Sharpe only; no edge otherwise. The prior, recorded in advance, was that the null was the expected outcome, because the metal–yield link is largely a low-frequency, contemporaneous phenomenon.</p>
 </section>
 <section id="what-the-work-shows" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-work-shows">What the work shows</h2>
@@ -303,15 +303,15 @@ Figure&nbsp;3: Cumulative net return of a no-edge signal at three cost levels, a
 <li><strong>A clean null is an output.</strong> The design was built so that a null would be a successful, useful result, and it is reported straight with a no-go decision and no capital deployed.</li>
 </ol>
 </section>
-<section id="limits-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="limits-and-next-steps">Limits and next steps</h2>
+<section id="scope-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
 <p>The test covers one family of rules on one asset at daily frequency. It says nothing about intraday strategies, options, leverage or volatility targeting, other instruments, or regime-switching variants, all of which were declared out of scope in advance and none of which can rescue this result. The data substitutions were logged, though a different dollar measure or real-yield definition could shift the numbers slightly. Costs are retail-scale and applied as a flat charge per unit of turnover, with no market impact. The sample is long, but a single path of history is still one draw.</p>
 <p>Natural extensions would be to apply the same pre-registered template to other candidate signals, so that the number of trials is tracked across a whole research programme and not only within one test, and to examine low-frequency levels relationships, where the original motivation lives, with the same standards.</p>
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
 <p>The results in the text are from the project’s own out-of-sample backtest, completed in 2026 on daily market and official data, with no capital deployed. The figures here are illustrative: they are simulated to share the horizon, sample length and cost structure of the real test and demonstrate the logic, not to reproduce its results.</p>
-<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
+<p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 
 </section>
@@ -727,7 +727,7 @@ Figure&nbsp;3: Cumulative net return of a no-edge signal at three cost levels, a
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Figures marked <em>simulated</em> illustrate the analysis; they are not its results.</p>
+<p>Figures marked <em>simulated</em> show the shape of each analysis; results are stated in the text.</p>
 </div>
   </div>
 </footer>

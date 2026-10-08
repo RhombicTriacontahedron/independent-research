@@ -80,7 +80,7 @@ Figure 3: Largest forecast difference between a run with the optional correctio
 - **Keep optional extensions optional.** Building additions as switchable, additive layers with an exact-equivalence test at the off position made it safe to extend the baseline model without losing the ability to verify it.
 - **Write the gaps down.** The project’s own assurance summary lists what is missing. Naming the gaps is part of what makes the rest credible.
 
-## Limits and next steps
+## Scope and next steps
 
 The workflow shows that machine-assisted work can be made traceable. It does not show that the models forecast well, and nothing here should be read as estimates on real data. The model is a minimal linear core. The full forward-looking solution with rational expectations is not implemented, the fiscal block is reduced to a simple additive term rather than full debt dynamics, and the political-risk correction is a non-structural add-on rather than a rule embedded in a structural model. Those are the documented gaps, and each is a research task in its own right.
 
@@ -90,4 +90,4 @@ Three steps would strengthen the work. First, solve the forward-looking model an
 
 The work was carried out during 2025 as part of a rebuild of macroeconomic modelling capability. It rests on a written research protocol, a tested implementation and generated audit reports, all exercised on simulated data; no real-data estimates are claimed. The figures above are simulated and show the logic of each check, not the project’s results.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

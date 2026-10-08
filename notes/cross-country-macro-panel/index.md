@@ -93,12 +93,12 @@ Figure 3: Early-warning screen, private non-financial sector. Left: credit-to-G
 ## Insights
 
 1.  **Build the panel before the model.** Most of the value sat in the harmonised, rule-governed panel. Once definitions, frequencies and aggregation are fixed, each new question becomes a short exercise rather than a new data project.
-2.  **Respect frequency.** Refusing to forward-fill quarterly data into months costs some coverage but avoids spurious precision. Separate monthly and quarterly panels keep the claim honest.
+2.  **Respect frequency.** Refusing to forward-fill quarterly data into months costs some coverage but avoids spurious precision. Separate monthly and quarterly panels keep each claim precise.
 3.  **Instrument sets must suit the sample.** With five countries and many months, a large dynamic instrument set produced a pathological test statistic and a spurious policy effect. A parsimonious set gave a credible result. This lesson transfers to any small-N dynamic panel.
 4.  **A data correction can change conclusions.** Fixing one country’s price series changed the size and significance of several coefficients, which is why every series carries its provenance.
 5.  **Some gaps are real.** For some countries, series such as quarterly government debt, core inflation or debt-service ratios have no public source. Recording those gaps explicitly is better than filling them with proxies.
 
-## Limits and next steps
+## Scope and next steps
 
 The panel has only five economies, so the results describe a small group, not emerging markets in general. Estimates are contemporaneous and linear; they do not capture thresholds or longer credit lags, and the volatility effect may partly reflect common global demand. The activity model uses one output measure and should be extended to labour-market and external-account outcomes. The downstream step, turning the diagnostics into regular written macro briefs, has been designed but not built. The early-warning screen applies a published threshold to the credit gap only; it sets none for the debt-service ratio and has not been tested out of sample, so it describes where jurisdictions stand rather than predicting crises.
 
@@ -106,4 +106,4 @@ The panel has only five economies, so the results describe a small group, not em
 
 The panel and the dynamic-panel estimates are the project’s own work during a career break, from late 2025 to early 2026, built with AI assistance under my direction as systems architect. The text and the table report real results from that work; the table was re-fitted from the stored panel, which reproduces the reported estimates exactly. The first two figures are simulated to share its structure (five units, monthly frequency) and are not the project’s estimates. The early-warning figure is real: new work from October 2026 on the BIS’s public series, with the screen’s rules fixed before it was first run; the count over time was added afterwards as a description.
 
-Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
+Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
