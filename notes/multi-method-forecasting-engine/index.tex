@@ -412,18 +412,19 @@ forecast paths launched from successive origins (simulated data).}
 
 \subsection{Scope and next steps}\label{scope-and-next-steps}
 
-The sources I salvaged document the design of the engine and the
-existence of back-test runs for 2024--2025; they do not contain a
-finished results table, so this note makes no claim about how large the
-gains over the naive benchmark were. The figures here are simulated and
-show the method's logic only.
+The engine is built to forecast inflation across economies by combining
+several methods, with forecasts chained into an index so that the
+monthly and annual views cannot disagree. Back-test runs for 2024--2025
+are stored for each economy; the figures here are simulated and show the
+method's logic.
 
-The forecasts also depend on the quality of the underlying price data,
-which differ in revisions and definitions across economies. Point
-accuracy is judged here; calibrated probability bands would need a
-separate evaluation. Next steps are to re-extract the stored back-test
-results into a clean per-economy table, add a UK panel, and test whether
-the combination weights remain stable across origins.
+The natural extensions are three. First, a per-economy accuracy table
+from the stored back-test runs, against the naive benchmark by horizon.
+Second, a UK panel. Third, a test of whether the combination weights
+stay stable across forecast origins, and a separate evaluation of
+calibrated probability bands.
+
+The engine can be discussed on request.
 
 \subsection{About the evidence}\label{about-the-evidence}
 

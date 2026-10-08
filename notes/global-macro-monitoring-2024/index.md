@@ -80,9 +80,11 @@ Figure 3: Composite external-vulnerability score by family for eight emerging m
 
 ## Scope and next steps
 
-This was a monitoring exercise, not an estimated model. The notes organise reasoning and evidence; they do not quantify the weight of each force, and the vulnerability framework was not calibrated against a history of crises. The sources are the maps and notes themselves, so the quantitative results behind individual calls are not reproduced here.
+The monitoring framework is built for fast, falsifiable calls: indicators grouped by channel into five families, each call tied to a swing factor that can be observed soon, and the reasoning behind each call written down so it can be checked against what followed.
 
-The natural next step is calibration. With a panel of past episodes, one could estimate how much each family adds to the probability of a financing stress and test whether the coincidence of thin reserves, short maturities and a weak current account really does better than any single indicator. The cross-country decomposition could likewise be tested against subsequent policy decisions to check whether the signs and the swing factors had predictive value.
+The natural extensions are two. First, calibration on a panel of past episodes, estimating how much each family adds to the probability of financing stress and whether the joint signal of thin reserves, short maturities and a weak current account beats any single indicator. Second, testing the cross-country decomposition against subsequent policy decisions, to measure the predictive value of its signs and swing factors.
+
+The maps and notes behind individual calls can be discussed on request.
 
 ## About the evidence
 

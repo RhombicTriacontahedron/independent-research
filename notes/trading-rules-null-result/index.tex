@@ -427,21 +427,16 @@ Verdict: no edge, reported the same way.
 
 \subsection{Scope and next steps}\label{scope-and-next-steps}
 
-The test covers one family of rules on one asset at daily frequency. It
-says nothing about intraday strategies, options, leverage or volatility
-targeting, other instruments, or regime-switching variants, all of which
-were declared out of scope in advance and none of which can rescue this
-result. The data substitutions were logged, though a different dollar
-measure or real-yield definition could shift the numbers slightly. Costs
-are retail-scale and applied as a flat charge per unit of turnover, with
-no market impact. The sample is long, but a single path of history is
-still one draw.
+The test is built as a pre-registered template: one family of rules on
+one asset at daily frequency, with the rule, the prior, the data
+substitutions and the out-of-scope variants written down in advance, so
+that the result cannot be reinterpreted after the fact.
 
-Natural extensions would be to apply the same pre-registered template to
+The natural extensions are two. First, applying the same template to
 other candidate signals, so that the number of trials is tracked across
-a whole research programme and not only within one test, and to examine
-low-frequency levels relationships, where the original motivation lives,
-with the same standards.
+a whole research programme and not only within one test. Second,
+examining low-frequency relationships in levels, where the original
+motivation lives, to the same standard.
 
 \subsection{About the evidence}\label{about-the-evidence}
 

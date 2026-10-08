@@ -89,9 +89,9 @@ Figure 3: The shape of an event-study on benefit intensity (simulated data). Di
 
 ## Scope and next steps
 
-An area panel cannot see what happens inside an area. A cost shock that passes through hardest where tenant demand is least elastic, or a landlord with a portfolio across authorities, is below its resolution. The null is silent on those mechanisms rather than exculpatory, and a household- or landlord-level incidence design is the right next test.
+The panel is built to test whether areas more exposed, measured before the events, saw different rent and benefit outcomes as interest rates rose and housing support was frozen.
 
-The window is also short and mid-transmission. The effective mortgage rate had only reached about 3.8% by early 2024, and fixed-rate deals taken out in 2021–22 were still rolling off. Tenancies reprice at renewal, and the rent series records rents currently paid, so adjustment is staggered and slow by construction. The rate study therefore commits to a replication once transmission is complete. Finally, the benefit estimates identify the direction of the effect robustly but their size depends on the specification, and the sustenance reading of housing support that sits alongside them is consistent with the results without being tested by them.
+The natural extensions are three. First, a replication once mortgage-rate transmission is complete, since fixed-rate deals and tenancies reprice slowly. Second, a household- or landlord-level incidence design, to see the mechanisms an area panel averages over. Third, a sharper reading of the size of the benefit effects across specifications, whose direction is already robust.
 
 ## About the evidence
 

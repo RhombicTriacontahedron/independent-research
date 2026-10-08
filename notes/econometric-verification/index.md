@@ -72,9 +72,11 @@ Figure 3: Share of series with a non-airline model, by automation level (simula
 
 ## Scope and next steps
 
-The checks cover a small set of documented traps. It cannot judge whether a model is appropriate, and some real errors, such as claiming model identification at a setting that does not perform it, depend on intent and cannot be found by reading code. The reference index covers the commands extracted so far, not the full language. Some components have so far been validated only on crafted cases, and everything has been run in a single computing environment, so portability is unproven.
+The toolkit is built to catch a documented set of econometric traps before and after estimation: pre-run checks on scripts, a reference index of the estimation language’s commands, and a regenerate-and-compare discipline for seasonal-adjustment diagnostics.
 
-Next steps are a wider set of crafted raw outputs, validation of the second connection route, and extending the same regenerate-and-compare discipline from seasonal-adjustment diagnostics to estimated model coefficients and forecasts.
+The natural extensions are three. First, a wider library of crafted raw outputs. Second, validating the second connection route and running the toolkit across more computing environments. Third, extending regenerate-and-compare from seasonal-adjustment diagnostics to estimated coefficients and forecasts.
+
+The toolkit can be discussed on request.
 
 ## About the evidence
 

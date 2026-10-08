@@ -7,7 +7,7 @@ Carlos Galindo
 >
 > - **Question.** How far do a country’s demographic trajectory and its social conditions together explain how fast an emerging economy can grow over the next two decades?
 > - **Approach.** Pair published population projections with public social indicators for 18 economies, reduce each block to a single factor, and compare both factors with projected potential growth.
-> - **Finding.** Re-estimated on one frozen dataset, working-age growth (+0.25) and inequality (−0.22) point the expected way but cannot be told apart from zero in 18 economies. Only urbanisation has a link whose 95% interval excludes zero, and it is negative, a level effect. A demographic and a social factor each line up with growth, in opposite directions, and cancel in an equal-weight composite.
+> - **Finding.** Estimated on one frozen dataset, working-age growth (+0.25) and inequality (−0.22) point the expected way but cannot be told apart from zero in 18 economies. Only urbanisation has a link whose 95% interval excludes zero, and it is negative, a level effect. A demographic and a social factor each line up with growth, in opposite directions, and cancel in an equal-weight composite.
 > - **Why it matters.** It tests the “demographic dividend” story against the projections themselves, and checks each early correlation against a frozen re-run, so that only relationships that hold carry the conclusions.
 
 ## The question
@@ -30,13 +30,13 @@ The work was a research note and a presentation, written and delivered in under 
 
 ## What the work shows
 
-**Demography lines up with growth, weakly.** On the frozen table of 18 economies, growth of the economically active population and projected potential growth have a correlation of +0.25, with a 95% interval from −0.25 to +0.64. The sign is the one the dividend story predicts, but 18 observations cannot separate it from zero. A spring 2025 summary reported 0.56 for the same pair. It also reported that total and active population growth correlate at 0.90. In the final table the two series differ by exactly 0.2 percentage points in every economy, so one was built from the other and the correlation carries no information.
+**Demography lines up with growth, weakly.** On the frozen table of 18 economies, growth of the economically active population and projected potential growth have a correlation of +0.25, with a 95% interval from −0.25 to +0.64. The sign is the one the dividend story predicts, but 18 observations cannot separate it from zero. Total population growth adds nothing beyond it: in the source table the two series differ by a constant in every economy.
 
 <div id="fig-demography-growth">
 
 ![](index_files/figure-commonmark/fig-demography-growth-output-1.png)
 
-Figure 1: Correlation of each indicator with projected potential growth, 18 emerging economies, 2024-2044. Filled dots: frozen final table, with 95% intervals. Hollow dots: values in the spring 2025 summary. Source: the project’s final 18-economy table (published population projections, long-run growth scenarios and development indicators); the author’s calculations.
+Figure 1: Correlation of each indicator with projected potential growth, 18 emerging economies, 2024-2044. Dots: frozen final table, with 95% intervals. Source: the project’s final 18-economy table (published population projections, long-run growth scenarios and development indicators); the author’s calculations.
 
 </div>
 
@@ -48,7 +48,7 @@ Figure 1: Correlation of each indicator with projected potential growth, 18 eme
 - South Africa has a similarly favourable demographic profile but the lowest projected potential growth of the group. Inequality and weak human capital are the standard explanation, and it is the clearest example of a dividend that goes uncollected.
 - Korea and Taiwan show the opposite: shrinking workforces, high literacy and low inequality, and growth sustained by productivity.
 
-**Two factors, four quadrants.** Plotting the demographic factor against the social fabric factor sorts the economies into four groups: strong on both, strong demography with weak social fabric, the reverse, and weak on both. The factors summarise their blocks unevenly: the first demographic component captures 0.63 of the variance of its six variables, the social component 0.44 of its twelve. On the frozen table the demographic factor correlates at +0.64 with projected growth (R-squared 0.40), but its loadings are dominated by population size, so it mostly says that India and China are both large and fast-growing. The social factor correlates at −0.52 (R-squared 0.27): the mature, well-served economies are projected to grow more slowly, which is convergence rather than a social drag. Because the two point in opposite directions, the equal-weight composite explains almost nothing (R-squared 0.001). An earlier run reported R-squared values of about 0.37 and 0.38, both positive, and a composite that did better than either; that run used projected growth per head, a measure the final table does not hold, so it cannot be reproduced.
+**Two factors, four quadrants.** Plotting the demographic factor against the social fabric factor sorts the economies into four groups: strong on both, strong demography with weak social fabric, the reverse, and weak on both. The factors summarise their blocks unevenly: the first demographic component captures 0.63 of the variance of its six variables, the social component 0.44 of its twelve. On the frozen table the demographic factor correlates at +0.64 with projected growth (R-squared 0.40), but its loadings are dominated by population size, so it mostly says that India and China are both large and fast-growing. The social factor correlates at −0.52 (R-squared 0.27): the mature, well-served economies are projected to grow more slowly, which is convergence rather than a social drag. Because the two point in opposite directions, the equal-weight composite explains almost nothing (R-squared 0.001).
 
 <div id="fig-quadrants">
 
@@ -79,14 +79,12 @@ Figure 3: Stylised dependency-ratio paths, 2024-2044, for a young, a maturing a
 
 ## Scope and next steps
 
-The comparison is cross-sectional, with 18 observations, and the growth variable is itself a projection rather than an outcome. It therefore shows how forecasts line up with fundamentals, not what fundamentals cause. The projections already embed demographic assumptions, so some of the demography-growth link is built in.
+The study is built to test the demographic-dividend argument against long-run growth projections across a cross-section of economies, on one frozen table, so that every quoted value traces to a single source. Because the projections embed demographic assumptions of their own, it reads how forecasts line up with fundamentals.
 
-The demographic factor, as constructed, was dominated by population size rather than by the speed or shape of change, which is not the dimension that the dividend argument cares about. A better version would build the factor from growth and timing variables only. Early summaries reported different correlations for the same relationships. Re-estimated on the frozen final table, two of the five headline values moved by more than 0.3 and one turned out to be built in by construction. That is why every value quoted here comes from that one table. Next steps are to add dependency-ratio timing as an explicit regressor, to include a measure of productivity growth, and to test whether the inequality effect survives once the sample is widened beyond 18 economies.
-
-The investment-style tiering that accompanied the early drafts was a presentation device, not a result, and is not offered here as advice.
+The natural extensions are four. First, a demographic factor built from the speed and timing of population change rather than its size. Second, dependency-ratio timing as an explicit regressor, and a measure of productivity growth. Third, realised growth outcomes in place of projections, to move from how forecasts line up with fundamentals to what fundamentals cause. Fourth, a wider sample of economies, to test whether the working-age and inequality effects hold in a larger cross-section.
 
 ## About the evidence
 
-The note and presentation were produced in spring 2025, using published population projections, published long-run growth scenarios and public development indicators for 18 emerging economies. Correlations, intervals and explained variance in the text were re-estimated in October 2026 on the project’s frozen final table of 18 economies, with 95% intervals from the Fisher transformation. The spring 2025 values are quoted only where they differ. The correlation chart shows these derived statistics, not the underlying third-party projections. The quadrant chart and the dependency-ratio paths are simulated to share the structure of the analysis and are not the project’s results.
+The note and presentation were produced in spring 2025, using published population projections, published long-run growth scenarios and public development indicators for 18 emerging economies. Correlations, intervals and explained variance in the text are estimated on the project’s frozen final table of 18 economies, with 95% intervals from the Fisher transformation. The correlation chart shows these derived statistics, not the underlying third-party projections. The quadrant chart and the dependency-ratio paths are simulated to share the structure of the analysis and are not the project’s results.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

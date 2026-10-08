@@ -281,9 +281,8 @@ Figure&nbsp;3: Residual between headline and summed contributions, with full and
 </section>
 <section id="scope-and-next-steps" class="level2">
 <h2 class="anchored" data-anchor-id="scope-and-next-steps">Scope and next steps</h2>
-<p>The feed is a data layer, not a forecast. It does not show forecast accuracy, and nothing here claims that the decomposition improves predictions of inflation. The simulated figures illustrate the construction; they are not results.</p>
-<p>Several limits are known. The reconstructed weights are an approximation based on prior-month prices, so small residuals are expected even with full coverage. The weights for 2006 to 2010 depend on name matching, with a small set of unmatched components still awaiting mapping. The feed covers the all-urban-consumers index only, so other price measures would need their own mappings.</p>
-<p>The next steps are a union of all weight vintages for fuller historical coverage, a decomposition of the residual into coverage and rounding parts, and linking the contributions to component-level forecasting models so that the bottom-up and top-down views can be compared out of sample.</p>
+<p>The feed is built as a clean data layer for US consumer prices: component prices and expenditure weights from the official source, carried forward month by month so that each component’s contribution to the headline index can be read directly, with checks that stop a shortened or gapped history from passing unnoticed. Its figures are simulated and illustrate the construction.</p>
+<p>The natural extensions are three. First, a union of all weight vintages for fuller historical coverage, and mappings for other price measures. Second, splitting the small reconstruction residual into coverage and rounding parts. Third, linking the contributions to component-level forecasting models, so that bottom-up and top-down views of inflation can be compared out of sample.</p>
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>

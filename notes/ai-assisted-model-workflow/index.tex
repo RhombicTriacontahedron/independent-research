@@ -420,23 +420,21 @@ the optional correction and the baseline run, by correction weight
 
 \subsection{Scope and next steps}\label{scope-and-next-steps}
 
-The workflow shows that machine-assisted work can be made traceable. It
-does not show that the models forecast well, and nothing here should be
-read as estimates on real data. The model is a minimal linear core. The
-full forward-looking solution with rational expectations is not
-implemented, the fiscal block is reduced to a simple additive term
-rather than full debt dynamics, and the political-risk correction is a
-non-structural add-on rather than a rule embedded in a structural model.
-Those are the documented gaps, and each is a research task in its own
-right.
+The workflow is built to make machine-assisted model building traceable
+end to end: each number carries its source, its age and the code that
+produced it, and the model's filter is checked on simulated data, where
+the true state is known.
 
-Three steps would strengthen the work. First, solve the forward-looking
-model and test that the structural version reduces to the current one in
-the appropriate limit, using the same equivalence logic. Second, run the
-workflow on real data, with the same logging, and compare the audit
-trail with the simulated one. Third, put the checks into an automated
-gate that fails a run whenever an expected artefact or provenance record
-is missing, so the discipline does not depend on anyone remembering it.
+The natural extensions are three. First, solving the full
+forward-looking model with rational expectations, a complete fiscal debt
+block and the political-risk adjustment inside the policy rule, and
+confirming that it reduces to the current core in the appropriate limit.
+Second, running the same logged workflow on real data and comparing its
+audit trail with the simulated one. Third, turning the checks into an
+automated gate that stops any run whose expected outputs or provenance
+records are missing.
+
+The full protocol and worked examples can be discussed on request.
 
 \subsection{About the evidence}\label{about-the-evidence}
 

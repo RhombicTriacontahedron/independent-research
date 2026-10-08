@@ -90,7 +90,9 @@ Figure 4: Policy rate against a Taylor-rule band for a range of neutral rates (
 
 ## Scope and next steps
 
-The post-2022 sample is short, so break tests have low power. A calendar of two full business cycles would be needed to call any change structural, and that is not available. Output and policy-rate series ended earlier than prices and labour costs in the vintage used, so some results are as of an earlier date and a few current-state figures came from outside the dataset and were used as context only. The margin proxy is an index gap, not firm-level profit. Real rates use realised inflation, not expectations, and yield spreads mix sovereign risk with monetary stance. The next step is a refresh to a common end date, a sensitivity band on the neutral rate, and a longer window.
+The analysis is built to separate structural from cyclical divergence in Central European industry, combining break tests, a policy-rule check, margin and real-rate measures, and bond pricing.
+
+The natural extensions are three. First, refreshing every series to a common end date and re-running the break tests as the post-2022 sample lengthens toward two full cycles. Second, a sensitivity band around the neutral rate in the policy-rule check. Third, firm-level margin data and survey-based inflation expectations, to sharpen the profit and real-rate readings.
 
 ## About the evidence
 

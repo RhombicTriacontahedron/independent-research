@@ -75,11 +75,11 @@ This is consistent with how fuel was priced there. For decades, gasoline and die
 
 ## Scope and next steps
 
-Coherence averaged over all frequencies says that two surprise series move together, not which leads, by how much, or at what horizon. The natural next step is to report phase and gain by frequency band for the four northern-border pairs. Splitting the sample at 2017 would then test whether the border region’s link to the United States changed with liberalisation, which would turn the policy reading from “consistent with” into a test.
+The method is built to find regional price links in frequency terms: a screen ranks pairs of series by the coherence of their surprises, and a policy timeline frames what the strongest regional links could mean.
 
-The policy timeline is context, not evidence: the analysis does not observe border fuel prices directly. The composition of Mexico’s statistical regions is not used, so the reading by state is indicative only. Regional consumer price sub-indices are noisy, and the estimator’s floor of about 0.21 limits what modest coherence can show.
+The natural extensions are three. First, phase and gain by frequency band for the four northern-border pairs, to show which side leads and by how much. Second, a sample split at 2017, which would turn the liberalisation reading into a formal test. Third, a check of how the US city motor-fuel index and Mexico’s north-west gasoline index are constructed, the strongest open lead from the screen.
 
-The robust anomaly, a single US city’s motor-fuel index moving closely with Mexico’s north-west gasoline index, is the open lead. It needs checking against how the two series are constructed before any economic reading. Until then it is reported, not interpreted.
+The full screen and its results can be discussed on request.
 
 ## About the evidence
 

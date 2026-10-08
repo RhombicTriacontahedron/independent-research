@@ -88,9 +88,11 @@ When a large share of unrelated pairs is screened, some will show high maximum c
 
 ## Scope and next steps
 
-The screen finds candidates, not causes. High coherence between two series says they share movement at some frequency; it does not say why, and in a very large search some of it will be chance. Pairs of interest need a second stage: stability across sub-periods, a correction for the number of pairs searched, and an economic story.
+The screen is built to search a very large space of macroeconomic series for pairs that move together at particular frequencies, as a first stage that surfaces candidates for economic study. The search is stratified, so it samples the space rather than enumerating it, and long runs are protected so that a failure costs one batch, not the whole search.
 
-The coverage is also thin by construction, under one tenth of one per cent of possible pairs. The search was stratified rather than exhaustive, so results should be read as a sample of the space, not a census. The series came from a licensed source, so the underlying values and the ranked list of strongest pairs are not reproduced here. A natural next step is a published, simulated benchmark on which the full screen, including its multiple-testing correction, can be demonstrated end to end.
+The natural extensions are two. First, a second stage for pairs of interest: stability across sub-periods, a correction for the number of pairs searched, and an economic story. Second, a published simulated benchmark on which the full screen, including its multiple-testing correction, can be demonstrated end to end.
+
+The source data are licensed, so the series and the ranked list of strongest pairs are not reproduced here; the results can be discussed on request.
 
 ## About the evidence
 

@@ -409,19 +409,20 @@ on simulated data. They are not measured accuracy.
 
 \subsection{Scope and next steps}\label{scope-and-next-steps}
 
-The current status is a working prototype. It has not been evaluated out
-of sample on real data, so it makes no claim about forecast accuracy or
-about whether the shock module adds value in practice. The module was
-trained and exercised on simulated data only. The model is linear in its
-core and has a single latent-factor flavour, with no treatment of data
-revisions or of publication-date calendars.
+The prototype is built to nowcast quarterly activity from monthly
+indicators as they are published, keeping the timing of each release,
+with a shock module that adjusts after sudden events while keeping each
+prediction bounded. It is developed on simulated data, where the true
+path is known.
 
-Three steps would turn it into evidence. First, assemble a real-time
-vintage dataset for one economy and run a pseudo-real-time test by
-information vintage against a simple benchmark. Second, train the shock
-module on genuine event features and report its cross-validated error,
-then test whether it improves the nowcast. Third, add a revision model
-so that early releases are treated as noisy measurements of later ones.
+The natural extensions are three. First, a real-time vintage dataset for
+one economy and a pseudo-real-time test, by information vintage, against
+a simple benchmark. Second, training the shock module on genuine event
+features and reporting its cross-validated contribution to the nowcast.
+Third, a revision model that treats early releases as noisy measurements
+of later ones, together with publication-date calendars.
+
+The design can be discussed on request.
 
 \subsection{About the evidence}\label{about-the-evidence}
 

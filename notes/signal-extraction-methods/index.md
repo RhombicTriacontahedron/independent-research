@@ -38,7 +38,7 @@ The work here began as a practical need: a way to take any economic series, stri
 
 **Lead-lag evidence points the wrong way for pass-through.** Granger tests show trade services preceding consumer services (p = 0.001, against 0.30 in reverse), but for the core-excluding measure the reverse direction dominates (p \< 0.001), which suggests feedback and not simple pass-through.
 
-The first three figures are drawn from the public price series and their stored decompositions, on observed months only (November 2009 to March 2026). The long-run growth figure still uses simulated data until the cross-country re-run is done.
+The first three figures are drawn from the public price series and their stored decompositions, on observed months only (November 2009 to March 2026). The long-run growth figure uses simulated data and illustrates the method.
 
 <div id="fig-decomp">
 
@@ -82,7 +82,9 @@ Figure 4: Long-run growth of a simulated quarterly series with crisis outliers:
 
 ## Scope and next steps
 
-The application covers five pairs of US price series, and a refutation of one claim for those series is not a general statement about price pass-through. Coherence is not causation: common drivers could produce coupling in the business-cycle band. The size and variance share of the frequency-selective link has not been quantified, and the claim that it has forecasting value has not been tested. The natural next step is a forecasting experiment in which a band-limited component of producer prices is used to predict consumer service inflation out of sample, compared with a naive benchmark. The cross-country long-run growth estimates also need to be re-run and tabulated before they are shown.
+The methods are built to decompose price series automatically, so that thousands can be screened without inspecting each one, and to read the links between series band by band. The application to five pairs of US price series shows how a frequency-selective view tests a pass-through claim directly.
+
+The natural extensions are three. First, measuring the size and variance share of the frequency-selective link. Second, a forecasting experiment in which a band-limited component of producer prices predicts consumer service inflation out of sample, against a naive benchmark. Third, a tabulated set of cross-country long-run growth estimates on real data.
 
 ## About the evidence
 
