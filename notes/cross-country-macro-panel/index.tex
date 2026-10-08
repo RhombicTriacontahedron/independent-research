@@ -373,6 +373,75 @@ in the sovereign spread has no contemporaneous effect. That does not
 make sovereign risk irrelevant: it more plausibly works through longer
 lags, spread levels, or thresholds that only extreme episodes cross.
 
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1111}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}@{}}
+\caption{Dynamic-panel estimates for industrial output growth (year on
+year, per cent), five economies, monthly, 1999 to 2026. Standard errors
+in parentheses; the robust column clusters by month; the two
+instrumental-variable estimators are in first differences. ***
+p\textless0.01, ** p\textless0.05, * p\textless0.10. In the
+monetary-channel specification the volatility coefficient is −0.093
+(0.023) under fixed effects with month-clustered errors and −0.103
+(0.028) under the first-difference instrumental-variable estimator, both
+p\textless0.01. Source: public macroeconomic and market series; the
+author's estimates.}\label{tbl-panel-estimates}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Pooled OLS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Fixed effects
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Fixed effects, robust
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Fixed effects, GLS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+GMM (Arellano-Bond)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+IV (Anderson-Hsiao)
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Pooled OLS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Fixed effects
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Fixed effects, robust
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Fixed effects, GLS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+GMM (Arellano-Bond)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+IV (Anderson-Hsiao)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Lagged output growth & 0.849*** & 0.842*** & 0.842*** & 0.845*** &
+0.673*** & 0.702*** \\
+& (0.014) & (0.014) & (0.029) & (0.014) & (0.142) & (0.124) \\
+Policy rate & −0.017 & −0.014 & −0.014 & −0.020 & 0.190 & 0.231 \\
+& (0.034) & (0.040) & (0.076) & (0.040) & (0.341) & (0.376) \\
+Inflation & −0.059* & −0.065* & −0.065 & −0.064* & −0.232 & −0.270 \\
+& (0.035) & (0.036) & (0.050) & (0.035) & (0.209) & (0.226) \\
+Change in sovereign spread & −0.023 & −0.003 & −0.003 & 0.013 & 0.153 &
+0.125 \\
+& (0.293) & (0.293) & (0.440) & (0.299) & (0.333) & (0.323) \\
+Oil price & 0.002 & 0.002 & 0.002 & 0.002 & 0.050** & 0.051** \\
+& (0.004) & (0.004) & (0.006) & (0.004) & (0.023) & (0.021) \\
+Observations & 1,442 & 1,442 & 1,442 & 1,442 & 1,431 & 1,434 \\
+\end{longtable}
+
 \textbf{Financial vulnerability.} The wider early-warning dataset
 records debt-service ratios and credit-to-GDP gaps for 63 jurisdictions.
 The figure below shows the kind of screen the framework supports:
@@ -439,10 +508,11 @@ threshold and an out-of-sample test before any ranking is used.
 
 The panel and the dynamic-panel estimates are the project's own work
 during a career break, from late 2025 to early 2026, built with AI
-assistance under my direction as systems architect. The text reports
-real results from that work; the figures here are simulated to share its
-structure (five units, monthly frequency, 63 jurisdictions) and are not
-the project's estimates.
+assistance under my direction as systems architect. The text and the
+table report real results from that work; the table was re-fitted from
+the stored panel, which reproduces the reported estimates exactly. The
+figures here are simulated to share its structure (five units, monthly
+frequency, 63 jurisdictions) and are not the project's estimates.
 
 Figures and tables marked \emph{simulated} are generated from simulated
 data built to share the structure of the analysis (its variables,

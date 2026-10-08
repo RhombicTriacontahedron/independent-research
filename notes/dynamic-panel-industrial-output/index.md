@@ -41,7 +41,7 @@ The project asks a plain question: once persistence is accounted for, which vari
 
 ![](index_files/figure-commonmark/fig-coef-output-1.png)
 
-Figure 1: Estimated effects in a simulated panel built to mimic the study’s structure (five units, 326 months): persistence and global risk appetite are recovered, the policy rate is not distinguishable from zero (simulated data).
+Figure 1: Estimated coefficients with 95% intervals, by estimator. Left and centre: the main specification (the two instrumental-variable estimators are in first differences). Right: global equity-market volatility in the monetary-channel specification, fixed effects with month-clustered errors and the first-difference instrumental-variable estimator. Five economies, monthly, 1999 to 2026. Source: public macroeconomic and market series; the author’s estimates.
 
 </div>
 
@@ -51,7 +51,7 @@ Figure 1: Estimated effects in a simulated panel built to mimic the study’s s
 
 ![](index_files/figure-commonmark/fig-irf-output-1.png)
 
-Figure 2: Cumulative response of output growth to a one-off 20-point rise in global volatility, from a simulated persistent process with the same structure (simulated data).
+Figure 2: Response of output growth to a one-off 20-point rise in global volatility, from the estimated persistence (0.81) and volatility coefficient (−0.093) of the monetary-channel fixed-effects model. Shaded: 90% band from 4,000 draws of the two coefficients. Source: public macroeconomic and market series; the author’s estimates.
 
 </div>
 
@@ -69,6 +69,6 @@ The panel has only five economies, so cross-country inference is limited and the
 
 ## About the evidence
 
-The study is real work on public macroeconomic and market series, covering 1999 to early 2026, carried out in an AI-assisted workflow during 2025 and 2026. The figures here are illustrative: they use simulated data with the same number of units, frequency and persistence, and they show the method, not the results.
+The study is real work on public macroeconomic and market series, covering 1999 to early 2026, carried out in an AI-assisted workflow during 2025 and 2026. Both figures show the project’s own estimates, re-fitted from the stored panel, which reproduces the reported results exactly.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

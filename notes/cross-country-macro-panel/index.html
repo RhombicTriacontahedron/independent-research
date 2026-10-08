@@ -234,6 +234,138 @@ Figure&nbsp;2: Illustrative response of industrial growth to a one-off 20-point 
 </div>
 <p><strong>Domestic policy rates show no robust direct effect.</strong> The policy-rate coefficient is statistically indistinguishable from zero in every specification. A significant negative result that appeared under the earlier, over-instrumented estimation disappeared once the instrument set was made credible, and the test of instrument validity then no longer rejected. The most plausible reading is two offsetting forces: tightening dampens output, while central banks tighten when the economy is strong.</p>
 <p><strong>Oil and spreads.</strong> Oil prices are insignificant in levels but positive and significant in first differences, which fits oil acting as a proxy for global demand rather than as a pure cost shock. The change in the sovereign spread has no contemporaneous effect. That does not make sovereign risk irrelevant: it more plausibly works through longer lags, spread levels, or thresholds that only extreme episodes cross.</p>
+<div id="tbl-panel-estimates" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-panel-estimates-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Dynamic-panel estimates for industrial output growth (year on year, per cent), five economies, monthly, 1999 to 2026. Standard errors in parentheses; the robust column clusters by month; the two instrumental-variable estimators are in first differences. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10. In the monetary-channel specification the volatility coefficient is −0.093 (0.023) under fixed effects with month-clustered errors and −0.103 (0.028) under the first-difference instrumental-variable estimator, both p&lt;0.01. Source: public macroeconomic and market series; the author’s estimates.
+</figcaption>
+<div aria-describedby="tbl-panel-estimates-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Pooled OLS</th>
+<th style="text-align: right;">Fixed effects</th>
+<th style="text-align: right;">Fixed effects, robust</th>
+<th style="text-align: right;">Fixed effects, GLS</th>
+<th style="text-align: right;">GMM (Arellano-Bond)</th>
+<th style="text-align: right;">IV (Anderson-Hsiao)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lagged output growth</td>
+<td style="text-align: right;">0.849***</td>
+<td style="text-align: right;">0.842***</td>
+<td style="text-align: right;">0.842***</td>
+<td style="text-align: right;">0.845***</td>
+<td style="text-align: right;">0.673***</td>
+<td style="text-align: right;">0.702***</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">(0.014)</td>
+<td style="text-align: right;">(0.014)</td>
+<td style="text-align: right;">(0.029)</td>
+<td style="text-align: right;">(0.014)</td>
+<td style="text-align: right;">(0.142)</td>
+<td style="text-align: right;">(0.124)</td>
+</tr>
+<tr class="odd">
+<td>Policy rate</td>
+<td style="text-align: right;">−0.017</td>
+<td style="text-align: right;">−0.014</td>
+<td style="text-align: right;">−0.014</td>
+<td style="text-align: right;">−0.020</td>
+<td style="text-align: right;">0.190</td>
+<td style="text-align: right;">0.231</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">(0.034)</td>
+<td style="text-align: right;">(0.040)</td>
+<td style="text-align: right;">(0.076)</td>
+<td style="text-align: right;">(0.040)</td>
+<td style="text-align: right;">(0.341)</td>
+<td style="text-align: right;">(0.376)</td>
+</tr>
+<tr class="odd">
+<td>Inflation</td>
+<td style="text-align: right;">−0.059*</td>
+<td style="text-align: right;">−0.065*</td>
+<td style="text-align: right;">−0.065</td>
+<td style="text-align: right;">−0.064*</td>
+<td style="text-align: right;">−0.232</td>
+<td style="text-align: right;">−0.270</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">(0.035)</td>
+<td style="text-align: right;">(0.036)</td>
+<td style="text-align: right;">(0.050)</td>
+<td style="text-align: right;">(0.035)</td>
+<td style="text-align: right;">(0.209)</td>
+<td style="text-align: right;">(0.226)</td>
+</tr>
+<tr class="odd">
+<td>Change in sovereign spread</td>
+<td style="text-align: right;">−0.023</td>
+<td style="text-align: right;">−0.003</td>
+<td style="text-align: right;">−0.003</td>
+<td style="text-align: right;">0.013</td>
+<td style="text-align: right;">0.153</td>
+<td style="text-align: right;">0.125</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">(0.293)</td>
+<td style="text-align: right;">(0.293)</td>
+<td style="text-align: right;">(0.440)</td>
+<td style="text-align: right;">(0.299)</td>
+<td style="text-align: right;">(0.333)</td>
+<td style="text-align: right;">(0.323)</td>
+</tr>
+<tr class="odd">
+<td>Oil price</td>
+<td style="text-align: right;">0.002</td>
+<td style="text-align: right;">0.002</td>
+<td style="text-align: right;">0.002</td>
+<td style="text-align: right;">0.002</td>
+<td style="text-align: right;">0.050**</td>
+<td style="text-align: right;">0.051**</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;">(0.004)</td>
+<td style="text-align: right;">(0.004)</td>
+<td style="text-align: right;">(0.006)</td>
+<td style="text-align: right;">(0.004)</td>
+<td style="text-align: right;">(0.023)</td>
+<td style="text-align: right;">(0.021)</td>
+</tr>
+<tr class="odd">
+<td>Observations</td>
+<td style="text-align: right;">1,442</td>
+<td style="text-align: right;">1,442</td>
+<td style="text-align: right;">1,442</td>
+<td style="text-align: right;">1,442</td>
+<td style="text-align: right;">1,431</td>
+<td style="text-align: right;">1,434</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 <p><strong>Financial vulnerability.</strong> The wider early-warning dataset records debt-service ratios and credit-to-GDP gaps for 63 jurisdictions. The figure below shows the kind of screen the framework supports: jurisdictions with a high debt-service burden and a positive credit gap are flagged for closer attention.</p>
 <div id="cell-fig-ewi" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
@@ -266,7 +398,7 @@ Figure&nbsp;3: Early-warning screen for 63 jurisdictions: credit gap against deb
 </section>
 <section id="about-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="about-the-evidence">About the evidence</h2>
-<p>The panel and the dynamic-panel estimates are the project’s own work during a career break, from late 2025 to early 2026, built with AI assistance under my direction as systems architect. The text reports real results from that work; the figures here are simulated to share its structure (five units, monthly frequency, 63 jurisdictions) and are not the project’s estimates.</p>
+<p>The panel and the dynamic-panel estimates are the project’s own work during a career break, from late 2025 to early 2026, built with AI assistance under my direction as systems architect. The text and the table report real results from that work; the table was re-fitted from the stored panel, which reproduces the reported estimates exactly. The figures here are simulated to share its structure (five units, monthly frequency, 63 jurisdictions) and are not the project’s estimates.</p>
 <p>Figures and tables marked <em>simulated</em> are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.</p>
 
 

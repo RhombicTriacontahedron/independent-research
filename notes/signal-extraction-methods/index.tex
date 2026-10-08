@@ -291,12 +291,12 @@ shows whether a series has shifted regime.
 \textbf{Application.} The methods were tested on five pairs of US price
 series: five producer price aggregates (final demand services, trade
 services, transportation and warehousing, a core measure and a
-core-excluding measure) against two consumer service indices
-(rent-related services and energy-related services), about 196 monthly
-observations from late 2009. The claim under test was that the two sides
-move together with a correlation of 70--80\%. Results were checked on
-first differences and on log differences, since the two scale the data
-differently.
+core-excluding measure) against two consumer service indices (services
+less rent of shelter, and services less energy services), about 196
+monthly observations from late 2009. The claim under test was that the
+two sides move together with a correlation of 70--80\%. Results were
+checked on first differences and on log differences, since the two scale
+the data differently.
 
 \subsection{What the work shows}\label{what-the-work-shows}
 
@@ -310,14 +310,18 @@ different base levels weight large changes unevenly. This is a
 methodological point worth knowing: the choice of transformation moves
 correlations by up to about 0.05, without changing the conclusion.
 
-\textbf{The correlation that exists is mostly seasonal.} Decomposing
-each series shows where the link lives. Correlations between the
-seasonal components are 0.50--0.62 for the core, core-excluding and
-final-demand pairs, while correlations between the trend growth rates
-are below 0.07 for the pure-price pairs. Coherence agrees: between
-seasonal factors, mean coherence is 0.51--0.70 and reaches 0.81--0.86 at
-the seasonal band for the pure-price pairs. In plain terms, the two
-sides of the economy share a calendar, which is not evidence that
+\textbf{Much of the correlation that exists is seasonal, and some is
+trend.} Decomposing each series shows where the link lives. Correlations
+between the seasonal components are 0.52--0.63 for the core,
+core-excluding and final-demand pairs. Correlations between trend growth
+rates are 0.18--0.44 for the four pairs against services less rent of
+shelter, highest for transport and for the core-excluding measure. An
+earlier version of this analysis put trend correlations below 0.07; it
+had included nine months of model forecast beyond the data, one of them
+a large artefact. Coherence agrees: between seasonal factors, mean
+coherence is 0.51--0.70 and reaches 0.81--0.86 at the seasonal band for
+the pure-price pairs. In plain terms, the two sides of the economy share
+a calendar and, for some pairs, a slow trend. Neither is evidence that
 producer prices pass through to consumers.
 
 \textbf{Coherence is frequency-selective, not absent.} Averaged over all
@@ -326,7 +330,7 @@ frequencies, the irregular components are only weakly coherent (mean
 significant at 0.42--0.82 for every pair, in 86--100\% of the 14
 estimator settings, and the conservative lower bounds for the raw series
 are 0.37 to 0.69. The transport-and-warehousing pair is the clearest
-case: its irregular component has coherence of 0.59 in the
+case: its irregular component has coherence of 0.57 in the
 business-cycle band and 0.79 at the two-month cycle, which the seasonal
 model does not capture. The core measure, by contrast, has almost no
 coherence in the business-cycle band (0.06 for its trend). Its
@@ -345,10 +349,10 @@ Granger tests show trade services preceding consumer services (p =
 reverse direction dominates (p \textless{} 0.001), which suggests
 feedback and not simple pass-through.
 
-The figures below use simulated series built to share the structure of
-the real analysis: monthly data, about 196 observations, a seasonal
-pattern, a slow common component and independent noise. They show how
-each method reads a series and are not the project's estimates.
+The first three figures are drawn from the public price series and their
+stored decompositions, on observed months only (November 2009 to March
+2026). The long-run growth figure still uses simulated data until the
+cross-country re-run is done.
 
 \begin{figure}
 
@@ -358,9 +362,10 @@ each method reads a series and are not the project's estimates.
 
 }
 
-\caption{\label{fig-decomp}A monthly price index split into trend,
-seasonal and irregular parts, and its seasonally adjusted version
-(simulated data).}
+\caption{\label{fig-decomp}US producer prices for transportation and
+warehousing services: not seasonally adjusted, seasonally adjusted, and
+the trend from the airline-model decomposition, November 2009 to March
+2026. Source: BLS via FRED; the author's decomposition.}
 
 \end{figure}%
 
@@ -372,9 +377,10 @@ seasonal and irregular parts, and its seasonally adjusted version
 
 }
 
-\caption{\label{fig-coherence}Two simulated price series: the ordinary
-correlation of their monthly changes is modest, but coherence is high at
-the seasonal cycle and at one slow cycle (simulated data).}
+\caption{\label{fig-coherence}Coherence of monthly log changes for the
+five producer-consumer pairs, by cycle length. Dashed: the squared
+ordinary correlation. Dotted: the 95\% threshold for coherence under no
+relationship. Source: BLS via FRED; the author's calculations.}
 
 \end{figure}%
 
@@ -386,9 +392,9 @@ the seasonal cycle and at one slow cycle (simulated data).}
 
 }
 
-\caption{\label{fig-components}Correlation of the same simulated pair,
-measured on the raw changes and on each decomposed component (simulated
-data).}
+\caption{\label{fig-components}Correlation of each producer-consumer
+pair, measured on monthly log changes and on each decomposed component.
+Source: BLS via FRED; the author's decomposition and calculations.}
 
 \end{figure}%
 
@@ -452,11 +458,12 @@ estimates also need to be re-run and tabulated before they are shown.
 
 The application uses public monthly price series for the United States
 from late 2009, about 196 observations per series, and the decomposition
-work was applied to US and Mexican price and activity series. All
-figures on this page come from simulated data built to share the
-structure of that analysis; the numbers in the text are the project's
-own results from the real series. The work was done from 2025 to 2026,
-as part of a rebuild of an applied research toolkit.
+work was applied to US and Mexican price and activity series. The first
+three figures are drawn from those public series and the stored
+decompositions; the long-run growth figure uses simulated data. The
+numbers in the text are the project's own results from the real series.
+The work was done from 2025 to 2026, as part of a rebuild of an applied
+research toolkit.
 
 Figures and tables marked \emph{simulated} are generated from simulated
 data built to share the structure of the analysis (its variables,

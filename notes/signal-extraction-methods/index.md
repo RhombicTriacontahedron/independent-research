@@ -24,27 +24,27 @@ The work here began as a practical need: a way to take any economic series, stri
 
 **Long-run growth.** For any series, the long-run (steady-state) growth rate is estimated from annualised log growth. The method uses a robust location estimator, so that crisis quarters and one-off outliers do not drag the estimate, and compares it with the ordinary mean. A recursive version shows how the estimate and its 95% band evolved as data arrived. A band-pass filter isolates the slow component of growth, and a sequential search for structural breaks in that slow component shows whether a series has shifted regime.
 
-**Application.** The methods were tested on five pairs of US price series: five producer price aggregates (final demand services, trade services, transportation and warehousing, a core measure and a core-excluding measure) against two consumer service indices (rent-related services and energy-related services), about 196 monthly observations from late 2009. The claim under test was that the two sides move together with a correlation of 70–80%. Results were checked on first differences and on log differences, since the two scale the data differently.
+**Application.** The methods were tested on five pairs of US price series: five producer price aggregates (final demand services, trade services, transportation and warehousing, a core measure and a core-excluding measure) against two consumer service indices (services less rent of shelter, and services less energy services), about 196 monthly observations from late 2009. The claim under test was that the two sides move together with a correlation of 70–80%. Results were checked on first differences and on log differences, since the two scale the data differently.
 
 ## What the work shows
 
 **The headline claim does not hold.** Correlations of log differences across the five pairs run from 0.06 to 0.48, against 0.11 to 0.53 for plain first differences. Formal tests reject a true correlation of 0.70 for every pair, and rolling 36-month correlations never reach 0.70 in any window, peaking at 0.65. The log version is uniformly a little weaker than the first-difference one, because price indices with different base levels weight large changes unevenly. This is a methodological point worth knowing: the choice of transformation moves correlations by up to about 0.05, without changing the conclusion.
 
-**The correlation that exists is mostly seasonal.** Decomposing each series shows where the link lives. Correlations between the seasonal components are 0.50–0.62 for the core, core-excluding and final-demand pairs, while correlations between the trend growth rates are below 0.07 for the pure-price pairs. Coherence agrees: between seasonal factors, mean coherence is 0.51–0.70 and reaches 0.81–0.86 at the seasonal band for the pure-price pairs. In plain terms, the two sides of the economy share a calendar, which is not evidence that producer prices pass through to consumers.
+**Much of the correlation that exists is seasonal, and some is trend.** Decomposing each series shows where the link lives. Correlations between the seasonal components are 0.52–0.63 for the core, core-excluding and final-demand pairs. Correlations between trend growth rates are 0.18–0.44 for the four pairs against services less rent of shelter, highest for transport and for the core-excluding measure. An earlier version of this analysis put trend correlations below 0.07; it had included nine months of model forecast beyond the data, one of them a large artefact. Coherence agrees: between seasonal factors, mean coherence is 0.51–0.70 and reaches 0.81–0.86 at the seasonal band for the pure-price pairs. In plain terms, the two sides of the economy share a calendar and, for some pairs, a slow trend. Neither is evidence that producer prices pass through to consumers.
 
-**Coherence is frequency-selective, not absent.** Averaged over all frequencies, the irregular components are only weakly coherent (mean 0.12–0.35). Yet peak coherence of the irregular components is significant at 0.42–0.82 for every pair, in 86–100% of the 14 estimator settings, and the conservative lower bounds for the raw series are 0.37 to 0.69. The transport-and-warehousing pair is the clearest case: its irregular component has coherence of 0.59 in the business-cycle band and 0.79 at the two-month cycle, which the seasonal model does not capture. The core measure, by contrast, has almost no coherence in the business-cycle band (0.06 for its trend). Its relationship with consumer services is narrow and calendar-bound.
+**Coherence is frequency-selective, not absent.** Averaged over all frequencies, the irregular components are only weakly coherent (mean 0.12–0.35). Yet peak coherence of the irregular components is significant at 0.42–0.82 for every pair, in 86–100% of the 14 estimator settings, and the conservative lower bounds for the raw series are 0.37 to 0.69. The transport-and-warehousing pair is the clearest case: its irregular component has coherence of 0.57 in the business-cycle band and 0.79 at the two-month cycle, which the seasonal model does not capture. The core measure, by contrast, has almost no coherence in the business-cycle band (0.06 for its trend). Its relationship with consumer services is narrow and calendar-bound.
 
 **Zero-frequency coherence can mislead.** The trade-services pair has coherence of 0.91 at the zero frequency yet a time-domain correlation of just 0.06. There is no contradiction. All price indices share a long-run drift, so coherence at the lowest frequency is high, while the ordinary correlation is a spectrum-weighted average dominated by frequencies where this pair is unrelated (seasonal coherence 0.03).
 
 **Lead-lag evidence points the wrong way for pass-through.** Granger tests show trade services preceding consumer services (p = 0.001, against 0.30 in reverse), but for the core-excluding measure the reverse direction dominates (p \< 0.001), which suggests feedback and not simple pass-through.
 
-The figures below use simulated series built to share the structure of the real analysis: monthly data, about 196 observations, a seasonal pattern, a slow common component and independent noise. They show how each method reads a series and are not the project’s estimates.
+The first three figures are drawn from the public price series and their stored decompositions, on observed months only (November 2009 to March 2026). The long-run growth figure still uses simulated data until the cross-country re-run is done.
 
 <div id="fig-decomp">
 
 ![](index_files/figure-commonmark/fig-decomp-output-1.png)
 
-Figure 1: A monthly price index split into trend, seasonal and irregular parts, and its seasonally adjusted version (simulated data).
+Figure 1: US producer prices for transportation and warehousing services: not seasonally adjusted, seasonally adjusted, and the trend from the airline-model decomposition, November 2009 to March 2026. Source: BLS via FRED; the author’s decomposition.
 
 </div>
 
@@ -52,7 +52,7 @@ Figure 1: A monthly price index split into trend, seasonal and irregular parts,
 
 ![](index_files/figure-commonmark/fig-coherence-output-1.png)
 
-Figure 2: Two simulated price series: the ordinary correlation of their monthly changes is modest, but coherence is high at the seasonal cycle and at one slow cycle (simulated data).
+Figure 2: Coherence of monthly log changes for the five producer-consumer pairs, by cycle length. Dashed: the squared ordinary correlation. Dotted: the 95% threshold for coherence under no relationship. Source: BLS via FRED; the author’s calculations.
 
 </div>
 
@@ -60,7 +60,7 @@ Figure 2: Two simulated price series: the ordinary correlation of their monthly
 
 ![](index_files/figure-commonmark/fig-components-output-1.png)
 
-Figure 3: Correlation of the same simulated pair, measured on the raw changes and on each decomposed component (simulated data).
+Figure 3: Correlation of each producer-consumer pair, measured on monthly log changes and on each decomposed component. Source: BLS via FRED; the author’s decomposition and calculations.
 
 </div>
 
@@ -86,6 +86,6 @@ The application covers five pairs of US price series, and a refutation of one cl
 
 ## About the evidence
 
-The application uses public monthly price series for the United States from late 2009, about 196 observations per series, and the decomposition work was applied to US and Mexican price and activity series. All figures on this page come from simulated data built to share the structure of that analysis; the numbers in the text are the project’s own results from the real series. The work was done from 2025 to 2026, as part of a rebuild of an applied research toolkit.
+The application uses public monthly price series for the United States from late 2009, about 196 observations per series, and the decomposition work was applied to US and Mexican price and activity series. The first three figures are drawn from those public series and the stored decompositions; the long-run growth figure uses simulated data. The numbers in the text are the project’s own results from the real series. The work was done from 2025 to 2026, as part of a rebuild of an applied research toolkit.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

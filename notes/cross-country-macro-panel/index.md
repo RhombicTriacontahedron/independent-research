@@ -60,6 +60,26 @@ Figure 2: Illustrative response of industrial growth to a one-off 20-point rise
 
 **Oil and spreads.** Oil prices are insignificant in levels but positive and significant in first differences, which fits oil acting as a proxy for global demand rather than as a pure cost shock. The change in the sovereign spread has no contemporaneous effect. That does not make sovereign risk irrelevant: it more plausibly works through longer lags, spread levels, or thresholds that only extreme episodes cross.
 
+<div id="tbl-panel-estimates">
+
+Table 1: Dynamic-panel estimates for industrial output growth (year on year, per cent), five economies, monthly, 1999 to 2026. Standard errors in parentheses; the robust column clusters by month; the two instrumental-variable estimators are in first differences. \*\*\* p\<0.01, \*\* p\<0.05, \* p\<0.10. In the monetary-channel specification the volatility coefficient is −0.093 (0.023) under fixed effects with month-clustered errors and −0.103 (0.028) under the first-difference instrumental-variable estimator, both p\<0.01. Source: public macroeconomic and market series; the author’s estimates.
+
+|  | Pooled OLS | Fixed effects | Fixed effects, robust | Fixed effects, GLS | GMM (Arellano-Bond) | IV (Anderson-Hsiao) |
+|----|---:|---:|---:|---:|---:|---:|
+| Lagged output growth | 0.849\*\*\* | 0.842\*\*\* | 0.842\*\*\* | 0.845\*\*\* | 0.673\*\*\* | 0.702\*\*\* |
+|  | (0.014) | (0.014) | (0.029) | (0.014) | (0.142) | (0.124) |
+| Policy rate | −0.017 | −0.014 | −0.014 | −0.020 | 0.190 | 0.231 |
+|  | (0.034) | (0.040) | (0.076) | (0.040) | (0.341) | (0.376) |
+| Inflation | −0.059\* | −0.065\* | −0.065 | −0.064\* | −0.232 | −0.270 |
+|  | (0.035) | (0.036) | (0.050) | (0.035) | (0.209) | (0.226) |
+| Change in sovereign spread | −0.023 | −0.003 | −0.003 | 0.013 | 0.153 | 0.125 |
+|  | (0.293) | (0.293) | (0.440) | (0.299) | (0.333) | (0.323) |
+| Oil price | 0.002 | 0.002 | 0.002 | 0.002 | 0.050\*\* | 0.051\*\* |
+|  | (0.004) | (0.004) | (0.006) | (0.004) | (0.023) | (0.021) |
+| Observations | 1,442 | 1,442 | 1,442 | 1,442 | 1,431 | 1,434 |
+
+</div>
+
 **Financial vulnerability.** The wider early-warning dataset records debt-service ratios and credit-to-GDP gaps for 63 jurisdictions. The figure below shows the kind of screen the framework supports: jurisdictions with a high debt-service burden and a positive credit gap are flagged for closer attention.
 
 <div id="fig-ewi">
@@ -84,6 +104,6 @@ The panel has only five economies, so the results describe a small group, not em
 
 ## About the evidence
 
-The panel and the dynamic-panel estimates are the project’s own work during a career break, from late 2025 to early 2026, built with AI assistance under my direction as systems architect. The text reports real results from that work; the figures here are simulated to share its structure (five units, monthly frequency, 63 jurisdictions) and are not the project’s estimates.
+The panel and the dynamic-panel estimates are the project’s own work during a career break, from late 2025 to early 2026, built with AI assistance under my direction as systems architect. The text and the table report real results from that work; the table was re-fitted from the stored panel, which reproduces the reported estimates exactly. The figures here are simulated to share its structure (five units, monthly frequency, 63 jurisdictions) and are not the project’s estimates.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
