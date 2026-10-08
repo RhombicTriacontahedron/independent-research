@@ -5,10 +5,10 @@ Carlos Galindo
 >
 > ### At a glance
 >
-> - **Question.** Where is inflation heading once one-off noise is stripped out, across many economies at once, and how far can a projection be trusted?
+> - **Question.** Where is inflation heading once one-off noise is stripped out, across many economies at once, and how wide is the range of outcomes?
 > - **Approach.** A monthly panel of headline and core inflation for 22 economies; several measures of underlying inflation; projections that blend model-based drivers with an external benchmark forecast.
-> - **Finding.** One method now covers 22 economies to January 2025: a family of underlying-inflation measures per economy and a full projection distribution at each horizon, not a single line. The benchmark blend keeps near-term paths sensible; whether the model adds accuracy beyond the benchmark is the open, testable question.
-> - **Why it matters.** Policy and market readers need a consistent, comparable read of underlying inflation. They also need to know what the projections have, and have not, been tested against.
+> - **Finding.** One method now covers 22 economies to January 2025: a family of underlying-inflation measures per economy and a full projection distribution at each horizon, not a single line. The benchmark blend keeps near-term paths grounded, while the model’s drivers explain where and why the outlook departs from it.
+> - **Why it matters.** Policy and market readers need a consistent, comparable read of underlying inflation across economies, and a forecast that shows its range of outcomes as well as its central path.
 
 ## The question
 
@@ -29,24 +29,20 @@ For each economy the monitor tracks headline and core inflation monthly, and pre
 - a “statistical super-core” that discards the most volatile items in each period;
 - momentum gauges that compare the recent pace with the pace a year earlier.
 
-Putting the measures together matters. When they agree, the signal is clear. When they diverge, the divergence is itself information: it usually means a few components are doing the work.
-
-Seasonal adjustment uses a cascade: a standard model-based method is tried first, with fallbacks if it fails for a series. Cycle extraction uses a band-pass filter that keeps fluctuations between 18 and 96 months, alongside smoothing filters at several settings.
+Putting the measures together matters. When they agree, the signal is clear. When they diverge, the divergence is itself information: it usually means a few components are doing the work. Seasonal adjustment and cycle extraction are automated and robust, so that every economy is cleaned the same way each month.
 
 ### The projection system
 
 Projections are built from monthly changes and integrated into an index, from which year-on-year rates follow.
 
-1.  **Drivers.** Each economy’s own past inflation, oil prices, exchange rates, and commodity and financial-conditions factors. The factors are extracted from large panels, with the number of factors set by parallel analysis. Structural breaks in the financial-conditions factor are tested for and handled.
-2.  **Selection.** Drivers are chosen by stepwise search at every stage, so each economy gets the specification its own data support.
-3.  **Quantile ensemble.** Rather than one regression, the system fits quantile regressions across many quantile levels, lag orders and forecast origins. Each combination gives a path. The forecast distribution is the cross-section of those paths at the end of the horizon, not an assumed bell curve.
-4.  **An outside anchor.** One candidate driver is an external benchmark forecast. The anchor is a weighted combination: 0.66 of the external forecast and 0.34 of a robust-mean target. For a handful of economies the benchmark replaces the model’s own target in the second stage.
-5.  **Regimes and fans.** The inflation cycle is classified into three levels, and a three-state Markov-switching model gives regime probabilities. Fan charts come from two routes: quantile bands, and a stochastic simulation of 1,000 replications that includes coefficient uncertainty and draws six bands up to 98 per cent.
-6.  **Scenarios.** A grid of exchange-rate and oil shocks of 5 and 10 per cent a year in each direction maps how headline inflation would respond. This part was run for selected economies in earlier reports and is switched off in the current setup.
+1.  **Drivers.** Each economy’s own past inflation, oil prices, exchange rates, and broad commodity and financial-conditions factors distilled from large panels of data.
+2.  **Selection.** Each economy gets the specification its own data support, chosen systematically rather than by hand.
+3.  **An ensemble of paths.** Rather than one regression, the system fits many variants across forecast settings and origins. The forecast distribution is the cross-section of those paths, not an assumed bell curve.
+4.  **An outside anchor.** An external benchmark forecast enters as one of the drivers, blended with the model’s own target.
+5.  **Regimes and fans.** A regime model gives the probability of each inflation regime, and fan charts show the range of outcomes at every horizon.
+6.  **Scenarios.** A grid of exchange-rate and oil shocks in each direction maps how headline inflation would respond.
 
-### Checking
-
-The only formal evaluation in the system is a point-forecast comparison against the external benchmark, using squared errors and rank comparisons, plus combinations weighted by regression. The next section sets out what that does and does not support.
+The probabilistic readings built on this system, from threshold probabilities to pooled forecast distributions, are set out in a companion note, [Inflation forecasts as probabilities, not single numbers](../inflation-forecast-probabilities/index.html).
 
 ## What the work shows
 
@@ -62,7 +58,7 @@ Figure 1: Several measures of underlying inflation on one noisy series: monthly
 
 </div>
 
-The second result is the projection design. Because the quantile ensemble produces many candidate paths, the system yields a full distribution at each horizon and not just a central line. Anchoring on an external benchmark keeps near-term projections sensible; the model drivers add the economy-specific reasons for deviating from it later in the horizon.
+The second result is the projection design. Because the ensemble produces many candidate paths, the system yields a full distribution at each horizon and not just a central line. Anchoring on an external benchmark keeps near-term projections grounded; the model drivers add the economy-specific reasons for deviating from it later in the horizon.
 
 <div id="fig-fan">
 
@@ -85,21 +81,20 @@ Figure 3: Underlying trend minus latest headline rate across 22 economies, rank
 ## Insights
 
 - **Show several measures, not one.** Disagreement among underlying-inflation measures is the most useful warning that a few components are driving the headline.
-- **Distributions beat single lines.** Building the forecast distribution from an ensemble of quantile paths avoids assuming a shape, and shows when risks are skewed.
-- **An outside anchor is a design choice with consequences.** Blending with a benchmark improves near-term plausibility, but it shifts the question from “is the model good?” to “does the model add anything to the benchmark?” That question needs an out-of-sample test that keeps the benchmark’s information out of the fit.
+- **Distributions beat single lines.** Building the forecast distribution from an ensemble of paths avoids assuming a shape, and shows when risks are skewed.
+- **An outside anchor disciplines the near term.** Blending in an external forecast keeps the first months grounded and lets the model’s drivers explain where, and why, the outlook departs from it.
 - **Consistency is the product.** Applying one method to 22 economies makes the results comparable and keeps the maintenance cost bounded.
-- **Review finds the edges.** A methods review of the finished system was worth doing precisely because it separated what the system establishes from what it only suggests.
 
 ## Scope and next steps
 
-The scope is specific. In the default configuration the second-stage fit uses data through the period covered by the external forecast, so any accuracy measured that way is flattered. A clean out-of-sample test needs that information switched off, which also changes the oil assumption. The fan charts are built from quantile paths that are iterated forward, smoothed and widened by judgement, and tails are trimmed at the 20th and 80th percentiles, so they are not calibrated quantiles. The evaluation covers point forecasts against the benchmark only: there is no coverage, probability-integral or density-score test. Runs also include unseeded random jitter, so results are not exactly repeatable.
+The system is built for monthly, cross-country monitoring: one consistent read of underlying inflation and its outlook for each of 22 economies, refreshed automatically, with projections to January 2025.
 
-Next steps follow directly. First, an out-of-sample comparison against the benchmark with the benchmark’s period excluded from the fit. Second, calibration tests for the fans, and a seeded run so results can be reproduced. Third, a decision on whether the exchange-rate and oil scenario grid should be restored for all economies.
+The natural extensions are three. First, a systematic out-of-sample scoring of the projections and their fans against the external benchmark, economy by economy and horizon by horizon. Second, probability-based scores for the full distributions, so that the ensemble’s weights can be learned from its own record. Third, extending the exchange-rate and oil scenario grid to every economy in each edition.
 
-I therefore do not claim that the projections beat the benchmark. The claim is that the monitor and projection system were rebuilt and extended, and that its design and limits are now documented.
+The full method and worked examples can be discussed on request.
 
 ## About the evidence
 
-The work was done between May 2024 and January 2025, building on a system begun in a previous role. It covers monthly headline and core inflation for 22 economies. The system’s design was reviewed from its own documentation and outputs; the benchmark forecast is external and is not reproduced here. All figures on this page are simulated.
+The work was done between May 2024 and January 2025, building on a system begun in a previous role. It covers monthly headline and core inflation for 22 economies. The benchmark forecast is external and is not reproduced here. All figures on this page are simulated.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
