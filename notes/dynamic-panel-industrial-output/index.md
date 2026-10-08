@@ -45,13 +45,21 @@ Figure 1: Estimated coefficients with 95% intervals, by estimator. Left and cen
 
 </div>
 
-**The other channels are weak or conditional.** Inflation has a negative sign in every specification, consistent with a cost channel, but it is significant only at the ten per cent level and loses significance once errors are clustered by month. Oil is insignificant in levels but positive in first differences, which reads as a global-demand proxy rather than a supply shock for these economies. Sovereign-spread changes have no contemporaneous effect; the work suggests that any effect runs through longer lags, spread levels or thresholds, and treats that as untested.
+**The other channels are weak or conditional.** Inflation has a negative sign in every specification, consistent with a cost channel, but it is significant only at the ten per cent level and loses significance once errors are clustered by month. Oil is insignificant in levels but positive in first differences, which reads as a global-demand proxy rather than a supply shock for these economies. Sovereign-spread changes have no contemporaneous effect. The work left three other routes open (longer lags, spread levels and a stress threshold), and a follow-up in October 2026 tested all three, with the lag length, the threshold rule and the decision rule fixed before any estimate was seen. Lagged changes over six months add nothing: the joint test of the lags gives p = 0.67, and the cumulative effect is −1.3 with a standard error of 1.0. A stress regime, defined as a spread above the economy’s own 80th percentile, does not change the slope (p = 0.24), and neither does a cut at the 75th or 90th percentile. Only the spread level carries a signal: one percentage point of spread is associated with output growth about 0.21 points lower in the following month (p = 0.026). Four tests were run, so that does not clear a multiple-testing bar, and it is reported as a lead to test out of sample rather than a finding.
 
 <div id="fig-irf">
 
 ![](index_files/figure-commonmark/fig-irf-output-1.png)
 
 Figure 2: Response of output growth to a one-off 20-point rise in global volatility, from the estimated persistence (0.81) and volatility coefficient (−0.093) of the monetary-channel fixed-effects model. Shaded: 90% band from 4,000 draws of the two coefficients. Source: public macroeconomic and market series; the author’s estimates.
+
+</div>
+
+<div id="fig-spread">
+
+![](index_files/figure-commonmark/fig-spread-output-1.png)
+
+Figure 3: Output growth and changes in the sovereign spread, by lag. Coefficients on the change in the spread in the same month and in each of the six months before, with 95% intervals, fixed effects with month-clustered errors. None is distinguishable from zero, and jointly the lags add nothing. Five economies, monthly, 2000 to 2025. Source: public macroeconomic and market series; the author’s estimates (2026).
 
 </div>
 
@@ -65,10 +73,10 @@ Figure 2: Response of output growth to a one-off 20-point rise in global volati
 
 ## Limits and next steps
 
-The panel has only five economies, so cross-country inference is limited and the results describe this group, not emerging markets in general. Monthly industrial output is a narrow measure of activity. The policy-rate result is a statement about a direct, linear, contemporaneous effect; it says nothing about expectations, forward guidance or effects at longer lags. The exclusion restrictions behind the instrumental-variable estimates cannot be proven, only tested for consistency, and with a small set of instruments the over-identification test has little power. Next steps are distributed-lag and threshold versions of the spread channel, a larger panel, and separating pre- and post-crisis samples.
+The panel has only five economies, so cross-country inference is limited and the results describe this group, not emerging markets in general. Monthly industrial output is a narrow measure of activity. The policy-rate result is a statement about a direct, linear, contemporaneous effect; it says nothing about expectations, forward guidance or effects at longer lags. The exclusion restrictions behind the instrumental-variable estimates cannot be proven, only tested for consistency, and with a small set of instruments the over-identification test has little power. Next steps are a larger panel, separate pre- and post-crisis samples, and an out-of-sample test of the spread-level lead.
 
 ## About the evidence
 
-The study is real work on public macroeconomic and market series, covering 1999 to early 2026, carried out in an AI-assisted workflow during 2025 and 2026. Both figures show the project’s own estimates, re-fitted from the stored panel, which reproduces the reported results exactly.
+The study is real work on public macroeconomic and market series, covering 1999 to early 2026, carried out in an AI-assisted workflow during 2025 and 2026. All three figures show the project’s own estimates. The first two are re-fitted from the stored panel, which reproduces the reported results exactly. The spread-channel tests are new work from October 2026 on the same panel, specified before estimation.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how the method works and what its output looks like; they are not the project’s results. Results stated in the text are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

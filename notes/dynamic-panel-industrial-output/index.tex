@@ -351,9 +351,19 @@ but it is significant only at the ten per cent level and loses
 significance once errors are clustered by month. Oil is insignificant in
 levels but positive in first differences, which reads as a global-demand
 proxy rather than a supply shock for these economies. Sovereign-spread
-changes have no contemporaneous effect; the work suggests that any
-effect runs through longer lags, spread levels or thresholds, and treats
-that as untested.
+changes have no contemporaneous effect. The work left three other routes
+open (longer lags, spread levels and a stress threshold), and a
+follow-up in October 2026 tested all three, with the lag length, the
+threshold rule and the decision rule fixed before any estimate was seen.
+Lagged changes over six months add nothing: the joint test of the lags
+gives p = 0.67, and the cumulative effect is −1.3 with a standard error
+of 1.0. A stress regime, defined as a spread above the economy's own
+80th percentile, does not change the slope (p = 0.24), and neither does
+a cut at the 75th or 90th percentile. Only the spread level carries a
+signal: one percentage point of spread is associated with output growth
+about 0.21 points lower in the following month (p = 0.026). Four tests
+were run, so that does not clear a multiple-testing bar, and it is
+reported as a lead to test out of sample rather than a finding.
 
 \begin{figure}
 
@@ -368,6 +378,24 @@ rise in global volatility, from the estimated persistence (0.81) and
 volatility coefficient (−0.093) of the monetary-channel fixed-effects
 model. Shaded: 90\% band from 4,000 draws of the two coefficients.
 Source: public macroeconomic and market series; the author's estimates.}
+
+\end{figure}%
+
+\begin{figure}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-latex/fig-spread-output-1.png}}
+
+}
+
+\caption{\label{fig-spread}Output growth and changes in the sovereign
+spread, by lag. Coefficients on the change in the spread in the same
+month and in each of the six months before, with 95\% intervals, fixed
+effects with month-clustered errors. None is distinguishable from zero,
+and jointly the lags add nothing. Five economies, monthly, 2000 to 2025.
+Source: public macroeconomic and market series; the author's estimates
+(2026).}
 
 \end{figure}%
 
@@ -406,17 +434,18 @@ contemporaneous effect; it says nothing about expectations, forward
 guidance or effects at longer lags. The exclusion restrictions behind
 the instrumental-variable estimates cannot be proven, only tested for
 consistency, and with a small set of instruments the over-identification
-test has little power. Next steps are distributed-lag and threshold
-versions of the spread channel, a larger panel, and separating pre- and
-post-crisis samples.
+test has little power. Next steps are a larger panel, separate pre- and
+post-crisis samples, and an out-of-sample test of the spread-level lead.
 
 \subsection{About the evidence}\label{about-the-evidence}
 
 The study is real work on public macroeconomic and market series,
 covering 1999 to early 2026, carried out in an AI-assisted workflow
-during 2025 and 2026. Both figures show the project's own estimates,
-re-fitted from the stored panel, which reproduces the reported results
-exactly.
+during 2025 and 2026. All three figures show the project's own
+estimates. The first two are re-fitted from the stored panel, which
+reproduces the reported results exactly. The spread-channel tests are
+new work from October 2026 on the same panel, specified before
+estimation.
 
 Figures and tables marked \emph{simulated} are generated from simulated
 data built to share the structure of the analysis (its variables,
