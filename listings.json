@@ -1,0 +1,29 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/notes/underlying-inflation-monitor/index.html",
+      "/notes/us-core-inflation-bottom-up/index.html",
+      "/notes/multi-method-forecasting-engine/index.html",
+      "/notes/forecast-method-horse-race/index.html",
+      "/notes/official-data-feed-us-inflation/index.html",
+      "/notes/english-local-authority-panel/index.html",
+      "/notes/global-macro-monitoring-2024/index.html",
+      "/notes/central-europe-industrial-divergence/index.html",
+      "/notes/cross-country-macro-panel/index.html",
+      "/notes/dynamic-panel-industrial-output/index.html",
+      "/notes/demographics-and-growth/index.html",
+      "/notes/mexico-tfp-paradox/index.html",
+      "/notes/macro-model-families/index.html",
+      "/notes/currency-divergence-scenarios/index.html",
+      "/notes/derivation-notes/index.html",
+      "/notes/mixed-frequency-nowcasting/index.html",
+      "/notes/signal-extraction-methods/index.html",
+      "/notes/signal-extraction-at-scale/index.html",
+      "/notes/ai-assisted-model-workflow/index.html",
+      "/notes/econometric-verification/index.html",
+      "/notes/trading-rules-null-result/index.html",
+      "/notes/energy-price-transmission-methods/index.html"
+    ]
+  }
+]
