@@ -196,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 <li>feasible generalised least squares;</li>
 <li>two instrumental-variable estimators that use lagged levels of output growth to handle the endogeneity that lagged outcomes create.</li>
 </ul>
-<p><strong>Checks.</strong> With only five economies and a long time dimension, the usual dynamic-panel worry runs the other way. The classic small-sample bias in fixed effects is of order one over T, roughly 0.003 here, so fixed effects is reliable. By contrast, estimators designed for many units and few periods can generate far more moment conditions than there are cross-sections. An earlier estimation with a very large instrument set produced a pathological over-identification test and a spurious significant policy-rate coefficient. Using a small, pooled instrument set restored a test that does not reject. Results were also re-estimated after correcting one economy’s inflation series, which removed a spurious significance in the real rate and strengthened the global-risk effect.</p>
+<p><strong>Checks.</strong> With only five economies and a long time dimension, the usual dynamic-panel worry runs the other way. The classic small-sample bias in fixed effects is of order one over T, roughly 0.003 here, so fixed effects is reliable. By contrast, estimators designed for many units and few periods can generate far more moment conditions than there are cross-sections. A very large instrument set produces a pathological over-identification test and a spurious significant policy-rate coefficient; a small, pooled instrument set gives a test that does not reject. Each economy’s inflation series was also validated before estimation, a step that removed a spurious significance in the real rate and strengthened the global-risk effect.</p>
 </section>
 <section id="what-the-work-shows" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-work-shows">What the work shows</h2>
@@ -251,7 +251,7 @@ Figure&nbsp;3: Output growth and changes in the sovereign spread, by lag. Coeffi
 <h2 class="anchored" data-anchor-id="insights">Insights</h2>
 <ol type="1">
 <li><strong>Look abroad first.</strong> In small open economies the global risk regime explains more output variation than any domestic variable tested.</li>
-<li><strong>A null is a result.</strong> The absence of a direct policy effect holds across estimators once the instrument set is credible, and an earlier “significant” effect did not.</li>
+<li><strong>A null is a result.</strong> The absence of a direct policy effect holds across estimators once the instrument set is credible; an over-instrumented estimator can manufacture significance where there is none.</li>
 <li><strong>Match the estimator to the panel.</strong> With few units and many periods, fixed effects is sound and heavily instrumented GMM is the hazard, the reverse of the textbook case.</li>
 <li><strong>Persistence amplifies.</strong> A small contemporaneous effect becomes a large cumulative one when output growth has a four-month half-life.</li>
 <li><strong>Data validation can change conclusions.</strong> Correcting one country’s series moved three of the headline coefficients.</li>

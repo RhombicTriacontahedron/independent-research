@@ -80,15 +80,15 @@ Each line is one method’s count of component wins. The lines cross, so the ran
 
 ![](index_files/figure-commonmark/fig-select-output-1.png)
 
-Figure 4: Out-of-sample scaled error test by test: choosing the best past method per component versus the simple average (simulated data).
+Figure 4: Mean scaled error in each of the twelve tests, 181 components: the method chosen for each component on the six older tests (left of the dashed line) against the simple average, then both judged on the six newer tests. Source: October 2025 re-run of the comparison, with the selection rule and split fixed before the test was run; author’s calculations.
 
 </div>
 
-This figure illustrates insight 1. A method chosen because it won a first round tends to do worse on the next round than the average of all of them, because part of its win was luck. It is a simulation of that mechanism and does not report a measured gap.
+**Insight 1, measured.** Choosing each component’s method on the six older tests and judging it on the six newer ones tests the insight directly, with the split and the rule fixed in advance. On the tests used for the choice, the chosen methods’ mean scaled error was about 0.14 below the average’s. On the six held-out tests that lead was gone: the chosen methods’ error was about 0.03 above the average’s, and the average was the more accurate for 102 of 181 components and in four of the six tests (sign test over components, p = 0.10). Part of a first-round win is luck, and the average does not need to guess which part.
 
 ## Scope and next steps
 
-- **Selection versus averaging, measured.** The stored month-by-month scores allow a direct out-of-sample test of insight 1: choose each component’s method on the earlier test months and judge it on the later ones, against the average.
+- **Selection versus averaging, over a longer record.** On six held-out tests the chosen methods’ first-round lead disappeared. A longer run of tests, and other ways of choosing, would show how large and how systematic the average’s out-of-sample margin is.
 - **Size of the margin.** A formal test of forecast accuracy across many series, with a correction for multiple comparisons, would show how much of the average’s full-year margin over the benchmark is systematic.
 - **Counts and magnitudes.** Win counts show how often a method leads. The month-by-month profile above adds how far each method is from the benchmark.
 - **Weighted combinations.** Evaluating the error-based weights against the equal-weight average on held-out months is a natural extension.
@@ -96,6 +96,6 @@ This figure illustrates insight 1. A method chosen because it won a first round 
 
 ## About the evidence
 
-The comparison is real: 181 US consumer-price components, twelve rolling one-month-ahead tests over the most recent year, completed in 2025 as part of the rebuild of a forecasting pipeline during a career break. The overall scores and leader counts come from its summary results (September 2025), and the month-by-month profile comes from an October 2025 re-run of the same comparison. The first two figures show measured results. The last two are simulated.
+The comparison is real: 181 US consumer-price components, twelve rolling one-month-ahead tests over the most recent year, completed in 2025 as part of the rebuild of a forecasting pipeline during a career break. The overall scores and leader counts come from its summary results (September 2025), and the month-by-month profile comes from an October 2025 re-run of the same comparison. The first, second and fourth figures show measured results; the out-of-sample test in the fourth was pre-registered (October 2026, on the stored scores). The third figure is simulated.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.

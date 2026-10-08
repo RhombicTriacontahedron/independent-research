@@ -74,7 +74,7 @@ Figure 3: Share of series with a non-airline model, by automation level (simula
 
 The toolkit is built to catch a documented set of econometric traps before and after estimation: pre-run checks on scripts, a reference index of the estimation language’s commands, and a regenerate-and-compare discipline for seasonal-adjustment diagnostics.
 
-The natural extensions are three. First, a wider library of crafted raw outputs. Second, validating the second connection route and running the toolkit across more computing environments. Third, extending regenerate-and-compare from seasonal-adjustment diagnostics to estimated coefficients and forecasts.
+The natural extensions are three. First, a wider library of crafted raw outputs. Second, validating the toolkit across more computing environments and routes into the estimation software. Third, extending regenerate-and-compare from seasonal-adjustment diagnostics to estimated coefficients and forecasts.
 
 The toolkit can be discussed on request.
 

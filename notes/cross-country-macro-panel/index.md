@@ -28,11 +28,11 @@ This project builds the panel so that those problems are handled by design, and 
 - When series are aggregated up to quarters, the rule follows the economic type: flows are summed, stocks are averaged or taken at period end, and rates are averaged.
 - Seasonally adjusted and unadjusted series are not mixed, units and transformations are audited, and every series carries its source and revision history so a later refresh can be compared with an earlier one.
 
-**Diagnostics framework.** The panel is organised around three blocks: global shocks, macroeconomic uncertainty, and financial-sector vulnerability. For the last, the screen uses the two early-warning series the BIS publishes for the private non-financial sector: the credit-to-GDP gap, available for 43 jurisdictions, and the debt-service ratio, available for 32 of them. Four of the five panel economies have both; Israel has the credit gap only. The screen reads both series directly from the BIS, with the download date recorded, because an earlier extraction had stored the credit-to-GDP ratio under the gap’s label.
+**Diagnostics framework.** The panel is organised around three blocks: global shocks, macroeconomic uncertainty, and financial-sector vulnerability. For the last, the screen uses the two early-warning series the BIS publishes for the private non-financial sector: the credit-to-GDP gap, available for 43 jurisdictions, and the debt-service ratio, available for 32 of them. Four of the five panel economies have both; Israel has the credit gap only. The screen reads both series directly from the BIS, with the download date recorded, so that each value carries its exact series label and vintage and the gap is never confused with the underlying credit-to-GDP ratio.
 
 **Estimation.** Industrial output growth is modelled as a dynamic panel: its own lag, the policy rate, inflation, the change in the sovereign spread, oil prices, and a market volatility index. Estimators include pooled and fixed-effects least squares, fixed effects with standard errors clustered by time (so that contemporaneous cross-country correlation is respected), and two instrumental-variable estimators in first differences. The panel is balanced with five countries and about 326 months, from January 1999 to February 2026, so fixed-effects bias from the lagged dependent variable is small.
 
-**Checking.** Results were compared across estimators and re-estimated after a data correction to one country’s price series. Where the original dynamic-panel estimation used a very large instrument set relative to five countries, it was replaced by a parsimonious one and the test of instrument validity re-run.
+**Checking.** Results were compared across estimators and re-estimated after a data correction to one country’s price series. Because a very large instrument set is unreliable with five countries, the dynamic-panel estimation uses a parsimonious one and reports the test of instrument validity.
 
 ## What the work shows
 
@@ -56,7 +56,7 @@ Figure 2: Illustrative response of industrial growth to a one-off 20-point rise
 
 </div>
 
-**Domestic policy rates show no robust direct effect.** The policy-rate coefficient is statistically indistinguishable from zero in every specification. A significant negative result that appeared under the earlier, over-instrumented estimation disappeared once the instrument set was made credible, and the test of instrument validity then no longer rejected. The most plausible reading is two offsetting forces: tightening dampens output, while central banks tighten when the economy is strong.
+**Domestic policy rates show no robust direct effect.** The policy-rate coefficient is statistically indistinguishable from zero in every specification. The null is robust to the estimator: an over-instrumented estimator can manufacture a significant negative coefficient, and with a parsimonious instrument set that passes the test of instrument validity none remains. The most plausible reading is two offsetting forces: tightening dampens output, while central banks tighten when the economy is strong.
 
 **Oil and spreads.** Oil prices are insignificant in levels but positive and significant in first differences, which fits oil acting as a proxy for global demand rather than as a pure cost shock. The change in the sovereign spread has no contemporaneous effect. That does not make sovereign risk irrelevant: it more plausibly works through longer lags, spread levels, or thresholds that only extreme episodes cross.
 

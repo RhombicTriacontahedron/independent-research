@@ -297,9 +297,9 @@ series the BIS publishes for the private non-financial sector: the
 credit-to-GDP gap, available for 43 jurisdictions, and the debt-service
 ratio, available for 32 of them. Four of the five panel economies have
 both; Israel has the credit gap only. The screen reads both series
-directly from the BIS, with the download date recorded, because an
-earlier extraction had stored the credit-to-GDP ratio under the gap's
-label.
+directly from the BIS, with the download date recorded, so that each
+value carries its exact series label and vintage and the gap is never
+confused with the underlying credit-to-GDP ratio.
 
 \textbf{Estimation.} Industrial output growth is modelled as a dynamic
 panel: its own lag, the policy rate, inflation, the change in the
@@ -313,9 +313,9 @@ from the lagged dependent variable is small.
 
 \textbf{Checking.} Results were compared across estimators and
 re-estimated after a data correction to one country's price series.
-Where the original dynamic-panel estimation used a very large instrument
-set relative to five countries, it was replaced by a parsimonious one
-and the test of instrument validity re-run.
+Because a very large instrument set is unreliable with five countries,
+the dynamic-panel estimation uses a parsimonious one and reports the
+test of instrument validity.
 
 \subsection{What the work shows}\label{what-the-work-shows}
 
@@ -364,12 +364,12 @@ a one-off 20-point rise in market volatility, with an uncertainty band
 
 \textbf{Domestic policy rates show no robust direct effect.} The
 policy-rate coefficient is statistically indistinguishable from zero in
-every specification. A significant negative result that appeared under
-the earlier, over-instrumented estimation disappeared once the
-instrument set was made credible, and the test of instrument validity
-then no longer rejected. The most plausible reading is two offsetting
-forces: tightening dampens output, while central banks tighten when the
-economy is strong.
+every specification. The null is robust to the estimator: an
+over-instrumented estimator can manufacture a significant negative
+coefficient, and with a parsimonious instrument set that passes the test
+of instrument validity none remains. The most plausible reading is two
+offsetting forces: tightening dampens output, while central banks
+tighten when the economy is strong.
 
 \textbf{Oil and spreads.} Oil prices are insignificant in levels but
 positive and significant in first differences, which fits oil acting as

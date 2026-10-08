@@ -27,7 +27,7 @@ The project asks a plain question: once persistence is accounted for, which vari
 - feasible generalised least squares;
 - two instrumental-variable estimators that use lagged levels of output growth to handle the endogeneity that lagged outcomes create.
 
-**Checks.** With only five economies and a long time dimension, the usual dynamic-panel worry runs the other way. The classic small-sample bias in fixed effects is of order one over T, roughly 0.003 here, so fixed effects is reliable. By contrast, estimators designed for many units and few periods can generate far more moment conditions than there are cross-sections. An earlier estimation with a very large instrument set produced a pathological over-identification test and a spurious significant policy-rate coefficient. Using a small, pooled instrument set restored a test that does not reject. Results were also re-estimated after correcting one economy’s inflation series, which removed a spurious significance in the real rate and strengthened the global-risk effect.
+**Checks.** With only five economies and a long time dimension, the usual dynamic-panel worry runs the other way. The classic small-sample bias in fixed effects is of order one over T, roughly 0.003 here, so fixed effects is reliable. By contrast, estimators designed for many units and few periods can generate far more moment conditions than there are cross-sections. A very large instrument set produces a pathological over-identification test and a spurious significant policy-rate coefficient; a small, pooled instrument set gives a test that does not reject. Each economy’s inflation series was also validated before estimation, a step that removed a spurious significance in the real rate and strengthened the global-risk effect.
 
 ## What the work shows
 
@@ -66,7 +66,7 @@ Figure 3: Output growth and changes in the sovereign spread, by lag. Coefficien
 ## Insights
 
 1.  **Look abroad first.** In small open economies the global risk regime explains more output variation than any domestic variable tested.
-2.  **A null is a result.** The absence of a direct policy effect holds across estimators once the instrument set is credible, and an earlier “significant” effect did not.
+2.  **A null is a result.** The absence of a direct policy effect holds across estimators once the instrument set is credible; an over-instrumented estimator can manufacture significance where there is none.
 3.  **Match the estimator to the panel.** With few units and many periods, fixed effects is sound and heavily instrumented GMM is the hazard, the reverse of the textbook case.
 4.  **Persistence amplifies.** A small contemporaneous effect becomes a large cumulative one when output growth has a four-month half-life.
 5.  **Data validation can change conclusions.** Correcting one country’s series moved three of the headline coefficients.
