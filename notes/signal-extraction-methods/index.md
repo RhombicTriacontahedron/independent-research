@@ -7,7 +7,7 @@ Carlos Galindo
 >
 > - **Question.** When two economic series seem to move together, how much of that is seasonality, how much is a shared slow trend, and how much is genuine short-run co-movement?
 > - **Approach.** Automated seasonal adjustment and trend-cycle decomposition, cross-spectral coherence by frequency, and a robust estimator of long-run growth, packaged to run on any series.
-> - **Finding.** In a worked application to producer and consumer service prices, a claimed 70–80% correlation is not supported: correlations are 0.06–0.48. What link exists sits mostly at the seasonal frequency and in the very slow trend.
+> - **Finding.** In a worked application to producer and consumer service prices, a claimed 70–80% correlation is not supported: correlations are 0.06–0.48. What link exists sits mostly at the seasonal frequency and in the very slow trend. Applied to 31 European economies over 1996–2026, the robust growth estimate sits above the ordinary mean in 27, because crisis falls outweigh the rebounds that followed.
 > - **Why it matters.** Headline correlations average over frequencies, so they can hide where a relationship lives and overstate how useful it is for forecasting.
 
 ## The question
@@ -38,7 +38,9 @@ The work here began as a practical need: a way to take any economic series, stri
 
 **Lead-lag evidence points the wrong way for pass-through.** Granger tests show trade services preceding consumer services (p = 0.001, against 0.30 in reverse), but for the core-excluding measure the reverse direction dominates (p \< 0.001), which suggests feedback and not simple pass-through.
 
-The first three figures are drawn from the public price series and their stored decompositions, on observed months only (November 2009 to March 2026). The long-run growth figure uses simulated data and illustrates the method.
+**Long-run growth across European economies.** The growth method was run on quarterly real GDP for 31 European economies, every country with an unbroken quarterly series from 1996 to mid-2026, with the EU27 aggregate as a reference. All economies share one window, 1996-Q2 to 2026-Q2 (121 quarters), and the summary statistics were fixed before any estimate was computed. The robust estimate is above the ordinary mean in 27 of the 31, because the outlying quarters are dominated by the falls of 2008–09 and 2020, which drag the mean down by more than the rebounds that followed lift it. The gap exceeds one standard error of the mean in four economies (Bulgaria, Estonia, Greece and Romania) and lies outside the 95% band in none, and the two estimators rank the economies almost identically (rank correlation 0.93). Ireland runs the other way (robust 4.1% against a mean of 5.4%), because its largest outliers are rises driven by multinational accounting. The slow component of growth shows at least one structural break in 16 of the 31. In 12 of those 16 the most recent regime grows more slowly than the 30-year average, in ten of them after a break between late 2006 and 2008. The exceptions are Greece, Italy, Portugal and Slovenia, whose latest regime begins with the post-2013 or post-2020 recovery. Counting every economy, latest-regime growth is below the window mean in 25 of 31. On each economy’s full available span, the robust estimate stays above the mean in 26 of 31, the same four economies exceed one standard error, and the rank correlation with the common-window ranking is 0.98.
+
+The first three figures are drawn from the public price series and their stored decompositions, on observed months only (November 2009 to March 2026). The two long-run growth figures are drawn from Eurostat quarterly national accounts.
 
 <div id="fig-decomp">
 
@@ -68,7 +70,15 @@ Figure 3: Correlation of each producer-consumer pair, measured on monthly log c
 
 ![](index_files/figure-commonmark/fig-steady-output-1.png)
 
-Figure 4: Long-run growth of a simulated quarterly series with crisis outliers: the robust estimate against the ordinary mean, with a 95% band that tightens as data arrive (simulated data).
+Figure 4: Long-run real GDP growth, 1996-Q2 to 2026-Q2, annualised: the robust estimate (dot) against the ordinary mean with its 95% band (bar), ordered by the robust estimate. Ireland is affected by multinational accounting. Source: Eurostat quarterly national accounts; the author’s calculations.
+
+</div>
+
+<div id="fig-steady-de">
+
+![](index_files/figure-commonmark/fig-steady-de-output-1.png)
+
+Figure 5: Germany: the long-run growth estimate as each quarter of data arrives, with its 95% band, 1997-Q2 to 2026-Q2 (estimates on fewer than five quarters of data are omitted). Source: Eurostat quarterly national accounts; the author’s calculations.
 
 </div>
 
@@ -78,16 +88,16 @@ Figure 4: Long-run growth of a simulated quarterly series with crisis outliers:
 2.  **Summary statistics average over frequency.** The ordinary correlation is a weighted average of coherence across frequencies. A relationship that lives at one cycle length is diluted, and a high value at the lowest frequency is not evidence of causal pass-through.
 3.  **Report the transformation.** Log differences and plain differences gave correlations up to about 0.05 apart. The effect is small, but it is systematic and should be disclosed.
 4.  **Check the estimator before trusting the peak.** Coherence peaks depend on segment length and overlap. Reporting the share of settings that remain significant is more informative than quoting the largest value.
-5.  **Robust growth rates are cheap insurance.** One or two crisis quarters can shift an average growth rate by more than its sampling error, and a robust estimate with a recursive band shows how much a number can be trusted.
+5.  **Robust growth rates are cheap insurance.** Across 31 European economies, crisis quarters pull the average growth rate below the typical quarter in 27, by more than one standard error in four. A robust estimate with a recursive band shows how much a long-run number can be trusted, and a break search shows whether the long run has itself moved.
 
 ## Scope and next steps
 
 The methods are built to decompose price series automatically, so that thousands can be screened without inspecting each one, and to read the links between series band by band. The application to five pairs of US price series shows how a frequency-selective view tests a pass-through claim directly.
 
-The natural extensions are three. First, measuring the size and variance share of the frequency-selective link. Second, a forecasting experiment in which a band-limited component of producer prices predicts consumer service inflation out of sample, against a naive benchmark. Third, a tabulated set of cross-country long-run growth estimates on real data.
+The natural extensions are three. First, measuring the size and variance share of the frequency-selective link. Second, a forecasting experiment in which a band-limited component of producer prices predicts consumer service inflation out of sample, against a naive benchmark. Third, extending the cross-country growth estimates to output per head and to bands that allow for autocorrelation in quarterly growth. These estimates describe total real GDP on current data with conventional standard errors, not potential output.
 
 ## About the evidence
 
-The application uses public monthly price series for the United States from late 2009, about 196 observations per series, and the decomposition work was applied to US and Mexican price and activity series. The first three figures are drawn from those public series and the stored decompositions; the long-run growth figure uses simulated data. The numbers in the text are the project’s own results from the real series. The work was done from 2025 to 2026, as part of a rebuild of an applied research toolkit.
+The application uses public monthly price series for the United States from late 2009, about 196 observations per series, and the decomposition work was applied to US and Mexican price and activity series. The first three figures are drawn from those public series and the stored decompositions. The long-run growth figures use Eurostat quarterly national accounts: GDP in chain-linked volumes, seasonally and calendar adjusted, for 31 European economies and the EU27, in the release of 9 October 2026. The numbers in the text are the project’s own results from the real series. The work was done from 2025 to 2026, as part of a rebuild of an applied research toolkit.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
