@@ -52,15 +52,17 @@ Figure 2: Contribution of broad price groups to a core forecast in one month: w
 
 </div>
 
-The third figure shows the producer-price link. Producer-price changes feed consumer prices with a delay, and the strength of the link differs across the delay. The forecast uses the profile of that delay to decide how much weight a fresh producer-price release deserves.
+The third figure shows the producer-price link, estimated on public data. Monthly changes in core PCE prices are related to monthly changes in a producer-price measure built for personal consumption, excluding food, energy and trade services, in the same month and in each of the six months before. The specification was fixed before the first estimate.
 
 <div id="fig-lag">
 
 ![](index_files/figure-commonmark/fig-lag-output-1.png)
 
-Figure 3: Illustrative lag profile: association between a producer-price margin series and a core PCE category at lags of zero to six months, with simulated uncertainty bands (simulated data).
+Figure 3: Producer prices and core PCE, by lag. Coefficients on the monthly change in producer prices for personal consumption (excluding food, energy and trade services) in the same month and in each of the six months before, with 90% intervals; monthly, November 2014 to August 2026, Newey-West errors. Source: BLS producer price indexes and BEA personal consumption expenditures prices (public); the author’s estimates (2026).
 
 </div>
+
+The profile has a clear shape. The largest single response comes in the same month: a one-point rise in producer-price inflation goes with about a quarter of a point on core PCE inflation that month. That is the part a forecaster can use before the consumption figure is published, because the producer-price release comes first. The response continues over the following months, and summed over seven months it reaches about 0.8 of a point (standard error 0.12), so most of a producer-price movement is matched in core PCE within about half a year. Leaving out the pandemic months gives the same total. Once the persistence of core PCE itself is allowed for, the same-month response stays, and most of the later months’ response is accounted for by core inflation carrying its own momentum. The link is therefore a timely signal at the release and a slower one through the persistence of core prices. It is an association in the data, not the rebuilt system’s own internal weights.
 
 ## Insights
 
@@ -84,6 +86,6 @@ The full comparison can be discussed on request.
 
 ## About the evidence
 
-The scoring window runs from October 2023 to September 2024, with the rebuild carried out during the career break, from May 2024. The comparison uses four bank forecasts and the survey consensus from Bloomberg survey data (2024); the data is licensed, so only the summary result is stated. All figures here are simulated and illustrate the method and the scoring layout.
+The scoring window runs from October 2023 to September 2024, with the rebuild carried out during the career break, from May 2024. The comparison uses four bank forecasts and the survey consensus from Bloomberg survey data (2024); the data is licensed, so only the summary result is stated. The first two figures are simulated and illustrate the method and the scoring layout. The producer-price figure shows the project’s own estimates on public BLS and BEA series, retrieved in October 2026.
 
 Figures and tables marked *simulated* are generated from simulated data built to share the structure of the analysis (its variables, horizons and frequencies). They show how each method works and what its output looks like. Results stated in the text, and figures that give a source, are the project’s own. Methods are described at the level of a methods section. Code and data pipelines are not reproduced here.
