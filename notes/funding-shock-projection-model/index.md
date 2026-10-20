@@ -78,7 +78,7 @@ Figure 3: The cross-country test the framework implies: change in the term prem
 
 The framework is built to read an advanced economy and an emerging market with one calibrated model, differing only where the currency of the debt says they should, and to apply it under an evidence standard that keeps every figure graded and every conflict in view.
 
-The natural extensions are three. First, the five-economy comparison tracked through time, with each figure re-read at its official source at every update. Second, the same specification applied to emerging markets that borrow in foreign currency and to hybrid cases, where both blocks run at once. Third, a cross-country test on real data of whether auction absorption and non-resident take-up explain moves in term premia better than headline deficits do.
+The natural extensions are three. First, the five-economy comparison tracked through time, with each figure re-read at its official source at every update. Second, the same specification applied to emerging markets that borrow in foreign currency, begun with Egypt (see the note on an emerging-market briefing in days), and to hybrid cases, where both blocks run at once. Third, a cross-country test on real data of whether auction absorption and non-resident take-up explain moves in term premia better than headline deficits do.
 
 The full specification and the five country readings can be discussed on request.
 
